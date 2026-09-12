@@ -1,0 +1,246 @@
+.apply-banner {
+    height: auto !important;
+}
+
+.applyForm {
+    background: var(--bg-white);
+    border-radius: 10px;
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.ee-form-widget {
+    font-size: 9px;
+    font-family: var(--primary-font) !important;
+    padding-bottom: 15px;
+    width: 100% !important;
+}
+
+.ee-form-widget #ee-send-otp-button-wrapper {
+    margin-left: 5px !important;
+}
+
+.ee-form-widget :not(.modal-content) {
+    font-family: var(--primary-font);
+}
+
+.ee-form-widget-form {
+    padding: 0 !important;
+}
+
+.ee-form-widget .ee-row {
+    width: 50%!important;
+    margin-top: 0!important;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ee-form-widget .ee-row:nth-child(4) {
+    width: 100% !important;
+}
+
+.ee-form-widget .ee-row:nth-child(4) .inline-inputs {
+    margin-top: 0 !important;
+}
+
+.ee-row.check-box-field.full-width {
+    display: block;
+    width: 100% !important;
+}
+
+.ee-form-widget .ee-row.controls {
+    width: 100% !important;
+    padding: 0 5px;
+}
+
+.ee-form-2.ee-form-widget .ee-row:nth-child(3),
+.ee-form-2.ee-form-widget .ee-row:nth-child(6) {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px;
+}
+
+.select2-container .select2-selection--single {
+    height: 36px;
+    border: 1px solid var(--ee-border-color);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 36px;
+    padding-left: 12px;
+}
+
+.ee-form-widget input:not([type=checkbox]):not([type=tel]):not([type=radio]):not([type=search]),
+.ee-form-widget select,
+.ee-form-widget textarea {
+    width: 100% !important;
+    border: 1px solid var(--ee-border-color) !important;
+    height: 36px !important;
+    padding: 0 12px !important;
+}
+
+.ee-form-widget label span {
+    left: 10px;
+    top: 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: top;
+}
+
+.ee-form-footer .btn {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0 0 !important;
+    background: var(--bg-gray) !important;
+    color: var(--text-black) !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: var(--primary-sub-font);
+    text-transform: uppercase;
+}
+
+.ee-form-footer .btn-submit {
+    background: var(--bg-green) !important;
+    border-color: var(--bg-green) !important;
+    color: var(--text-white) !important;
+}
+
+.ee-form-footer .btn:hover {
+    background: var(--bg-blue) !important;
+    border-color: var(--bg-blue) !important;
+    color: var(--text-white) !important;
+}
+
+.ee-form-widget .col-25,
+.ee-form-widget .col-75 {
+    padding: 0 5px;
+    margin-top: 10px !important;
+}
+
+.ee-row.check-box-field.full-width {
+    padding: 0 5px 5px;
+}
+
+.check-box-field label {
+    display: block;
+    color: black;
+    position: relative;
+}
+
+.check-box-field input {
+    position: absolute;
+    top: 13px;
+    left: 0;
+}
+
+.check-box-field span {
+    position: static !important;
+    width: 100%;
+    padding-left: 25px;
+    display: block;
+}
+
+.iti__country-list {
+    width: 200px;
+}
+
+.iti input,
+.iti input[type=tel],
+.iti input[type=text] {
+    height: 36px;
+}
+
+.select2-results__option {
+    text-align: left;
+    padding: 2px 8px;
+    font-size: 12px !important;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+
+p.otp-input-container {
+    display: flex;
+    max-width: 250px;
+    margin: auto;
+}
+
+.ee-form-widget-enter-otp .modal-footer {
+    display: block !important;
+    text-align: center !important;
+}
+
+.modal a.close-modal {
+    top: 7.5px !important;
+    right: 7.5px !important;
+}
+
+ul.dropdown-menu.active {
+    display: block;
+}
+
+.modalNew {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    padding: 100px 15px;
+    overflow: auto;
+}
+
+.modalNew .modal-dialog {
+    background: var(--bg-white);
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.ee-form-widget .modal-header .close {
+    margin-top: unset;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 28px;
+    border-radius: 50%;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    line-height: 31px;
+}
+
+.ee-form-widget-enter-otp {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-backdrop.in {
+    opacity: 0;
+}
+
+p.instruction {
+    font-size: 14px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .applyForm {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ee-form-widget .ee-row {
+        width: 100%!important;
+    }
+    .applyForm {
+        padding: 15px !important;
+    }
+}

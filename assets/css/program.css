@@ -1,7 +1,7 @@
 /* ============================================
    Online Uttaranchal University - Program Page CSS
    Shared across MBA, MCA, BBA, BCA, BA pages
-   Domain: onlineuttaranchaluniversity.in
+   Domain: onlineuttaranchaluniversity.com
    ============================================ */
 
 /* ---------- CSS Variables (inherited from index) ---------- */
@@ -119,7 +119,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .program-hero::after {
-  content: '';
+  content: '\\2192';
   position: absolute;
   right: -100px;
   top: -100px;
@@ -648,7 +648,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .admission-step::after {
-  content: '→';
+  content: '\\2192';
   position: absolute;
   right: -14px;
   top: 36px;
@@ -713,7 +713,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .footer { background: #1a1a2e; color: #ccc; padding: 50px 0 20px; }
 .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
 .footer-col h4 { color: var(--white); font-size: 18px; font-weight: 700; margin-bottom: 16px; position: relative; padding-bottom: 10px; }
-.footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--primary-red); border-radius: 2px; }
+.footer-col h4::after { content: '\\2192'; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--primary-red); border-radius: 2px; }
 .footer-col p { font-size: 13px; line-height: 1.7; }
 .footer-col ul li { margin-bottom: 8px; }
 .footer-col ul li a { color: #aaa; font-size: 13px; transition: color 0.3s; }
@@ -732,7 +732,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .fixed-buttons { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 900; display: flex; flex-direction: column; gap: 2px; }
 .fixed-buttons a { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 8px 0 0 8px; color: var(--white); font-size: 20px; }
 .fixed-buttons a.whatsapp { background: #25d366; }
-.fixed-buttons a.virtual-tour { background: var(--primary-blue); }
 .fixed-buttons a.phone { background: var(--primary-red); }
 
 .go-top { position: fixed; bottom: 30px; right: 30px; width: 44px; height: 44px; border-radius: 50%; background: var(--primary-blue); color: var(--white); border: none; font-size: 20px; cursor: pointer; display: none; align-items: center; justify-content: center; z-index: 800; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: background 0.3s; }

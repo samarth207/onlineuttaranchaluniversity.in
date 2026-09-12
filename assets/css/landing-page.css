@@ -1,0 +1,461 @@
+.pt-140 {
+    padding-top: 120px
+}
+
+.hero-banner {
+    background-color: var(--bg-blue);
+    height: 620px;
+}
+
+.hero-banner__content ul {
+    padding-left: 24px;
+}
+
+.hero-banner__image {
+    overflow: hidden;
+    border-radius: 400px 0 0 400px;
+    -webkit-border-radius: 400px 0 0 400px;
+    -moz-border-radius: 400px 0 0 400px;
+    -ms-border-radius: 400px 0 0 400px;
+    -o-border-radius: 400px 0 0 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 46%;
+    height: 790px !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-banner__image img {
+    width: 100%;
+}
+
+.hero-banner__content .main-heading h1,
+.hero-banner__content .main-heading h2 {
+    color: var(--text-green);
+}
+
+.hero-banner__content .main-heading h1 span,
+.hero-banner__content .main-heading h2 span {
+    color: var(--text-white);
+}
+
+.hero-banner__content p {
+    font-size: 20px;
+}
+
+.programs-section__content {
+    padding-right: 80px;
+}
+
+.programs-section__content ul li {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+
+.programs-section__content ul li img {
+    width: 28px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.program-section__thumb {
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+
+.program-section__thumb:hover {
+    transition: ease-in-out 0.2s;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+
+.program-section__thumb h5 {
+    font-family: var(--primary-sub-font);
+    font-size: 18px;
+}
+
+.advantages-section {
+    background-color: var(--bg-blue);
+    height: 620px;
+}
+
+.advantages-section__image {
+    overflow: hidden;
+    border-radius: 0 400px 400px 0;
+    -webkit-border-radius: 0 400px 400px 0;
+    -moz-border-radius: 0 400px 400px 0;
+    -ms-border-radius: 0 400px 400px 0;
+    -o-border-radius: 0 400px 400px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 790px !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.advantages-section__image img {
+    width: 100%;
+}
+
+.advantages-section__li .col-sm-6 {
+    position: relative;
+}
+
+.advantages-section__li img {
+    width: 55px;
+    position: absolute;
+    top: 0;
+    left: 9px;
+}
+
+.advantages-section__li span {
+    padding-left: 70px;
+    display: block;
+}
+
+.advantages-section__content {
+    padding-right: 50px;
+}
+
+.advantages-section__content p {
+    font-size: 20px;
+}
+
+.ranking-section__logos {
+    padding-left: 70px;
+}
+
+.ranking-section__logos img {
+    border: 1px solid var(--bg-gray);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    padding: 5px 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-section {
+    background: var(--bg-gray);
+}
+
+.alumni-section__slider {
+    padding: 0 100px;
+}
+
+.alumni-section__slider--item {
+    padding: 0 15px;
+}
+
+.alumni-section__slider--item .card-body {
+    min-height: 200px;
+}
+
+.alumni-section__slider--item h3 {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.alumni-section__slider--item small {
+    display: block;
+    color: var(--text-white);
+}
+
+.alumni-section__slider--item .card-footer img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.alumni-section__slider--item .card-footer {
+    z-index: 1;
+}
+
+.stu-image {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 270px;
+}
+
+.stu-image img {
+    width: 100%;
+}
+
+.testimoni-section__slider--item p {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.st-name h5 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.st-rating {
+    color: var(--text-green);
+    margin-bottom: 30px;
+}
+
+.faculity-section p {
+    font-size: 16px;
+}
+
+.faculity-section h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gallery-section__slider--item {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    min-height: 350px;
+}
+
+.gallery-section__slider--item h4 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+
+/* new testimonial */
+
+.testimoni-section-full {
+    height: 800px;
+}
+
+.testimoni-section-full .slick-list,
+.testimoni-section-full .slick-track {
+    height: 100%;
+}
+
+.testimoni-section-full .tsi-in {
+    max-width: 600px;
+}
+
+.testimoni-section-full .page-heading {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.testimoni-section-full .pt-8 {
+    padding-top: 280px;
+}
+
+.testimoni-section-full .pagination-style-1 .slick-dots {
+    padding: 0 0 0 0;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.testimoni-section-full .pagination-style-1 .slick-arrow {
+    display: none !important;
+}
+
+.degree-sample {
+    background: var(--bg-blue);
+}
+.degree-sample__content{
+    border-bottom: 15px solid var(--text-green);
+}
+.degree-sample__content p{
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+/* new testimonial */
+
+@media only screen and (max-width: 1399px) {
+    .hero-banner {
+        height: 478px;
+    }
+    .hero-banner__content p {
+        font-size: 18px;
+    }
+    .programs-section__content {
+        padding-right: 0;
+    }
+    .advantages-section__content p {
+        font-size: 18px;
+    }
+    .hero-banner__image img {
+        width: auto;
+        height: 100%;
+    }
+    .advantages-section__image img {
+        width: auto;
+        height: 100%;
+    }
+    .ranking-section__logos {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .advantages-section {
+        height: 720px;
+    }
+    .alumni-section__slider {
+        padding: 0;
+    }
+    .stu-image {
+        right: 10px;
+        width: 220px;
+    }
+    .pt-140 {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-banner,
+    .advantages-section {
+        height: auto;
+    }
+    .hero-banner__image,
+    .advantages-section__image {
+        position: static;
+        overflow: inherit;
+        transform: none;
+        height: auto !important;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .hero-banner__image img,
+    .advantages-section__image img {
+        width: 100%;
+        height: auto;
+    }
+    .stu-image {
+        width: 280px;
+    }
+    .hero-banner__content {
+        padding: 50px 0 20px
+    }
+    .advantages-section {
+        padding-bottom: 0 !important;
+    }
+    .testimoni-section-full .testimoni-section__slider--item {
+        background-position: 80% 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pt-140 {
+        padding-top: 170px;
+    }
+    .faculity-section p {
+        font-size: 16px;
+    }
+    .faculity-section .col-md-4.col-sm-12.col-4.text-end {
+        text-align: left !important;
+    }
+    .faculity-section .col-md-4.col-sm-12.col-4.text-end img {
+        width: 50px;
+    }
+    .testimoni-section-full .pt-8 {
+        padding-top: 210px;
+    }
+    .testimoni-section-full .page-heading {
+        top: 50px;
+    }
+    .faculity-section h4 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .stu-image {
+        width: 240px;
+        right: -50px;
+    }
+    .testimoni-section__slider--item p {
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 20px;
+    }
+    .faculity-section .col-md-4.col-sm-12.col-4.text-end {
+        text-align: right !important;
+    }
+    .testimoni-section-full {
+        height: 650px;
+    }
+    .testimoni-section-full .testimoni-section__slider--item p {
+        max-height: 230px;
+        overflow: auto;
+    }
+    .gallery-section__slider--item {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    .alumni-section__slider--item h3 {
+        font-size: 24px;
+        line-height: 21px;
+    }
+    .alumni-section__slider--item .card-body {
+        padding: 10px !important;
+        min-height: 150px;
+    }
+    .alumni-section__slider--item .card-footer {
+        padding: 10px !important;
+    }
+    .stu-image {
+        width: 200px;
+    }
+    .st-name h5 {
+        font-size: 20px;
+    }
+    .faculity-section .col-md-4.col-sm-12.col-4.text-end img {
+        width: 70px;
+    }
+}

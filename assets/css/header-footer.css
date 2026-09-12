@@ -1,0 +1,482 @@
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--bg-white);
+    transition: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+}
+
+.header__top--links li {
+    margin-right: 30px;
+}
+
+.rightFixed-btns .fa-whatsapp {
+    background: #61b239 !important;
+    color: #fff !important;
+}
+
+.header__top--links li:last-child {
+    margin-right: 0;
+}
+
+.header__top--links li a {
+    color: var(--text-black);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.header__top--links li a:hover {
+    color: var(--text-blue);
+}
+
+.header__top--links li a i {
+    color: var(--text-blue);
+    margin-right: 5px;
+}
+
+.header-social p {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.header-social a {
+    color: var(--text-blue);
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.header-social a:hover {
+    color: var(--text-green);
+}
+
+
+/* header */
+
+
+/* footer */
+
+.footer {
+    background: var(--bg-dark-gray);
+    padding: 40px 0 80px 0;
+}
+
+.footerInfo {
+    margin-top: 20px;
+}
+
+.footerInfo li {
+    margin-bottom: 3px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: var(--text-white);
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.footer p, .footer li span {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--text-white);
+}
+
+.footer a {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--text-white);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.footer a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--bg-white);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: ease-in-out 0.2s;
+}
+
+.footer a:hover::after {
+    width: 100%;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    font-size: 20px;
+    opacity: 0.3;
+    margin-right: 10px;
+}
+
+.copyrights {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 70px;
+}
+
+.copyrights a {
+    margin-right: 20px;
+}
+
+.copyrights p {
+    margin: 0;
+}
+
+.ft-logo {
+    width: 100px !important;
+    position: absolute;
+    background: var(--bg-dark-gray);
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.ft-logo img {
+    width: 100%;
+}
+
+.uu-varification {
+    margin-top: 30px;
+}
+
+.uu-varification a {
+    display: block;
+    font-size: 14px;
+    font-family: var(--primary-sub-font);
+    line-height: 18px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    background: #262626;
+    display: inline-block;
+}
+
+.uu-varification a::after {
+    display: none;
+}
+
+.uu-varification a span {
+    color: var(--text-green);
+}
+
+.header.sticky {
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+}
+
+.header .uu-pc-logo img {
+    transition: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+}
+
+.header.sticky .uu-pc-logo img {
+    width: 120px;
+    transition: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+}
+
+
+/* right side fixed icons */
+
+.rightFixed-btns {
+    position: fixed;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.rightFixed-btns li {
+    margin-bottom: 7px;
+}
+
+.rightFixed-btns li a {
+    position: relative;
+    display: block
+}
+
+.rightFixed-btns li a i {
+    height: 44px;
+    width: 44px;
+    border: 0;
+    line-height: 44px;
+    color: var(--text-black);
+    background: var(--bg-gray);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-size: 22px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.rightFixed-btns__content {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 170px;
+    color: var(--text-black);
+    font-size: 14px;
+    text-align: left;
+    color: var(--text-white);
+    background: #c9001a !important;
+    height: 44px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 8px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+
+.rightFixed-btns__content small {
+    display: block;
+    line-height: 14px;
+}
+
+.rightFixed-btns__content span {
+    display: block;
+    line-height: 14px;
+    font-family: var(--primary-sub-font);
+}
+
+.rightFixed-btns li a:hover .rightFixed-btns__content {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+}
+
+.rightFixed-btns li a:hover i {
+    box-shadow: none;
+}
+
+
+/* right side fixed icons */
+
+
+/* Slide transitions */
+
+.slideUp {
+    top: -150px !important;
+}
+
+.slideDown {
+    top: 0 !important;
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: #f35f5f;
+    transition: all linear 0.1s;
+    min-width: 0%;
+    z-index: 1000;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+
+/* footer */
+
+@media only screen and (max-width: 1399px) {
+    .header .btn-lg {
+        padding: 10px 18px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .header .uu-pc-logo img {
+        width: 120px;
+    }
+    .header .btn-lg {
+        padding: 10px 13px;
+        font-size: 13px;
+    }
+    .header__top--links li a {
+        font-size: 12px;
+    }
+    .header-social p {
+        font-size: 12px;
+    }
+    .headerApply a.nav-link {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header .btn-lg {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .header__center .container {
+        display: block !important;
+    }
+    .header__top--links li:nth-child(2),
+    .header__top--links li:nth-child(3) {
+        display: none;
+    }
+    .header__center--right {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 6px 0;
+        border-top: 1px solid rgb(255 255 255 / 25%);
+        transition: all .3s ease-in-out;
+    }
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .header__center--right {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+    .footerContact>p,
+    .footerContact>ul,
+    .footerContact .footer-social,
+    .footerContact .uu-varification {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 44px 15px 0 !important;
+    }
+    .headerApply__btn {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header__center--left {
+        display: block !important;
+        text-align: center;
+    }
+    .uu-logo {
+        display: inline-block !important;
+    }
+    .uu-admission-dd {
+        display: block !important;
+        margin: 15px 0 0 !important;
+    }
+    .uu-admission-dd .dropdown {
+        display: inline-block !important;
+        width: 300px;
+    }
+    .uu-admission-dd .dropdown button {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .uu-admission-dd a {
+        display: inline-block !important;
+        font-size: 14px;
+    }
+    .header .uu-pc-logo {
+        margin-right: 5px !important;
+    }
+    .header .uu-pc-logo img,
+    .header.sticky .uu-pc-logo img {
+        width: 150px;
+    }
+    .header.sticky {
+        top: -99px;
+    }
+    .slideUp {
+        top: -99px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .header .btn-lg {
+        padding: 10px 11px;
+        font-size: 14px;
+    }
+    .uu-admission-dd .dropdown {
+        width: 250px;
+    }
+    .header-social a {
+        margin-left: 16px;
+    }
+    .footer {
+        padding: 10px 0 80px;
+    }
+    .footer h4 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .copyrights div {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+    }
+    .copyrights a {
+        margin: 0 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    .header__top--links li {
+        margin: 0;
+    }
+    .header__top--links li a {
+        font-size: 12px;
+        display: block;
+        line-height: 12px;
+        padding-left: 20px;
+    }
+    .header__top--links li a i {
+        margin-left: -20px;
+    }
+    .uu-admission-dd .dropdown {
+        width: 180px;
+    }
+}
+

@@ -1,0 +1,2668 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "f039f9f7-0379-401f-a59b-082c3ca51cba",
+        });
+      });
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online UU - UGC Entitled Degree</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H42YNPG966"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H42YNPG966');
+</script>
+    <link rel="icon" href="">
+        
+	<link rel="preload" href="assets/fonts/Metropolis-Thin.woff2" as="font" type="font/woff2" crossorigin> 
+	<link rel="preload" href="assets/fonts/Metropolis-Light.woff2" as="font" type="font/woff2" crossorigin> 
+	<link rel="preload" href="assets/fonts/Metropolis-Regular.woff2" as="font" type="font/woff2" crossorigin> 
+	<link rel="preload" href="assets/fonts/Metropolis-Medium.woff2" as="font" type="font/woff2" crossorigin> 
+	<link rel="preload" href="assets/fonts/Metropolis-SemiBold.woff2" as="font" type="font/woff2" crossorigin> 
+	<link rel="preload" href="assets/fonts/Metropolis-Bold.woff2" as="font" type="font/woff2" crossorigin> 
+	<link rel="preload" href="assets/fonts/Metropolis-Black.woff2" as="font" type="font/woff2" crossorigin> 
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/slick.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/global.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/header-footer.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/landing-page.css?v=2.1">
+	<link rel="stylesheet" href="assets/css/apply-program.css?v=2.1">
+
+	<link rel="icon" href="">
+	<meta name="theme-color" content="#21337d">
+
+	<style>
+	
+	 /** temp end css  temp end css 
+	 
+	.marquee-container.bottom {
+    visibility: hidden;
+}
+.marquee-container.top, .popup-overlay2, .allNotification {
+    display: none !important;
+}
+
+ **/
+
+
+
+ /** exit popup css **/
+ 
+    .demo-content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 50px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+       .person-image img {
+    max-width: 100%;
+}
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 20px;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideIn 0.4s ease-out;
+            overflow: hidden;
+            display: flex;
+            height: auto;
+        }
+
+        .popup-left {
+            flex: 1;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .popup-right {
+            flex: 1;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #666;
+            font-size: 24px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        
+        .close-btn:hover {
+            background: rgba(0,0,0,0.1);
+            color: #333;
+        }
+
+        .popup-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .popup-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ff4757, #ff3742);
+            border: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(255, 71, 87, 0.4);
+        }
+
+        .credentials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .credential-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            min-width: 85px;
+        }
+
+        .credential-badge {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 8px;
+            font-size: 0.75rem;
+        }
+
+        .naac-badge {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        }
+
+        .india-badge {
+            background: linear-gradient(135deg, #ffa726, #ff9800);
+        }
+
+        .ranking-badge {
+            background: linear-gradient(135deg, #e91e63, #ad1457);
+        }
+
+        .credential-text {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #333;
+            line-height: 1.3;
+        }
+
+        .credential-subtext {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .person-image {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .person-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            background: linear-gradient(135deg, #434343, #000000);
+        }
+
+        .decorative-elements {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .decorative-elements::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            to { 
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .popup-content {
+                flex-direction: column;
+                max-width: 90%;
+                min-height: auto;
+            }
+
+            .popup-left {
+                padding: 30px 20px 20px;
+            }
+
+            .popup-right {
+                min-height: 200px;
+            }
+
+            .person-image {
+                width: 200px;
+                height: 250px;
+            }
+
+            .popup-title {
+                font-size: 1.5rem;
+            }
+
+            .credentials {
+                gap: 10px;
+            }
+
+            .credential-badge {
+                width: 50px;
+                height: 50px;
+                font-size: 0.7rem;
+            }
+
+            .credential-text {
+                font-size: 0.8rem;
+            }
+        }
+
+        .demo-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+        }
+
+        .test-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .test-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .test-btn.primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .test-btn.secondary {
+            background: #f8f9fa;
+            color: #666;
+            border: 2px solid #ddd;
+        }
+
+        .test-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    
+        /** exit pop up end **/
+		
+		.dateHightlight {
+    background: #488b27;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+   /** font-weight: bold;  **/
+    padding-left: 3% !important;
+
+}.divider {
+    padding: 0 15px;
+    font-family: monospace;
+}
+@media only screen and (max-width: 600px) {
+.hidden-xs{
+	display:none !important;
+}
+}
+@media only screen and (min-width: 601px) {
+.hidden-sm{
+	display:none !important;
+}
+section.hero-banner.program-banner.position-relative.overflow-hidden .row>*{
+	padding-left: 0px;
+}
+}
+	</style>
+	
+    <link rel="icon" type="image/ico" href="/assets/images/favicon.ico"/>
+     <style>
+        .modal, .modal2 {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            align-items: center;
+            justify-content: center;
+        }
+        .card-footer.p-0.bg-transparent.border-0.mt-3 a:nth-child(3) {
+    background: #c9001a;
+    border: 1px solid #c9001a;
+}
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            min-width: 400px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .close-btn:hover {
+            color: #000;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        
+        .modal h4 {
+    font-size: 18px;
+}
+    .primary-btn {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: inherit;
+    text-align: center;
+}
+        .dwnldb {
+    background: #0081cd;
+    color: #fff !important;
+}
+        
+        .dwnldopn {
+    color: #fff;
+}
+
+
+        .primary-btn:hover {
+            background-color: #218838;
+        }
+        
+        .modal h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .modal p {
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+<style>
+    .marquee-container {
+      max-width: 642px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #61b239, #4e9e28);
+      color: #fff;
+      padding: 15px 0;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    
+    .marquee-container:before, .marquee-container:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 50px;
+      height: 100%;
+      z-index: 2;
+    }
+    
+    .marquee-container:before {
+      left: 0;
+    }
+    
+    .marquee-container:after {
+      right: 0;
+    }
+    
+    .marquee {
+      display: flex;
+      width: fit-content;
+      animation: scroll 10s linear infinite;
+    }
+
+     .top .marquee {
+      display: flex;
+      width: fit-content;
+      animation: scroll 100s linear infinite;
+      padding-top: 5px;
+    }
+    
+    .marquee-item {
+      white-space: nowrap;
+      padding: 0 30px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    .nocostblock .card.h-100.br-10.border-0 {
+   background-image: url(assets/emi_icon2.png);
+    background-size: 32%;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-position-x: 215px;
+}
+     .marquee-item .icon {
+    margin-right: 10px;
+    font-size: 24px;
+    display: inline-block;
+    transform: rotate(329deg);
+}
+    
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    
+  
+  </style>
+     <style>
+         input#email {
+    width: 100% !important;
+    border: 1px solid #ccc !important;
+    height: 36px !important;
+    padding: 10px;
+    border-radius:10px;
+}
+#email-form button {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #064290;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0 0 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: var(--primary-sub-font);
+    text-transform: uppercase;
+}
+    #response-message {
+      margin-top: 10px;
+      color: green; /* Change color as needed */
+    }
+     #registration-box {
+      position: relative;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+    #new-user-tab:hover,
+    #already-registered-tab:hover{
+      background: #0081cd !important;
+    }
+    #new-user-tab,
+    #already-registered-tab {
+      width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0 0 !important;
+    background: #c9001a;
+    color: #fff;
+    border: 1px solid #ddd !important;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: var(--primary-sub-font);
+    }
+.align-cn {
+    max-width: 250px;
+    margin: 0px auto;
+}
+    .active-tab {
+      display: none;
+    }
+    div#response-message {
+    text-align: center;
+    margin-bottom: 2%;
+}
+  </style>
+   <style>
+        .modal, .modal2 {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            align-items: center;
+            justify-content: center;
+        }
+        .card-footer.p-0.bg-transparent.border-0.mt-3 a:nth-child(3) {
+    background: #c9001a;
+    border: 1px solid #c9001a;
+}
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            min-width: 400px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .close-btn:hover {
+            color: #000;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-toggle::after {
+    right: 5px;
+    top: 10px;
+}
+        
+        .modal h4 {
+    font-size: 18px;
+}
+    .primary-btn {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: inherit;
+    text-align: center;
+}
+        
+        
+        .primary-btn:hover {
+            background-color: #218838;
+        }
+        
+        .modal h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .modal p {
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+    
+</head>
+
+<body class="pt-140">
+
+<!-- Modal MBA -->
+    <div id="customModal" class="modal">
+     <div class="modal-content">
+            <span class="close-btn" id="closeBtn1">&times;</span>
+   <section class="fee-section" id="fees">
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-lg-12  col-xs-12">
+                    <div class="page-heading pb-0">                      
+                        <p style="font-size: 18px;font-weight:bold;color: red;">Avail 30% Early Bird Scholarship on MBA Program Fee</p>
+                        <p style="font-size: 18px;"><span style="color: #61b239;font-weight: bold;font-size: 19px;">Total Program Fee:</span>
+                         <strike>INR 1,40,000</strike> <span style="font-weight:bold;">INR 98,000</span></p>
+                    </div>
+                    <div class="fee-section__table">
+                        <div class="">
+                             <div class="row g-3" style="margin-top: 2%;">
+                                                                   <div class="col-md-6 col-6">
+    <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">One Time Fee:</h4>
+               <h4><strike>INR 1,36,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 94,000</h4>
+            </div>
+            <small>Scholarship + 4,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+
+
+                                
+                                  <div class="col-md-6 col-6 col-xs-12">
+     <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Annual Fee:</h4>
+               <h4><strike>INR 68,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 47,000</h4>
+            </div>
+            <small>Scholarship + 2,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                             </div>
+                            <div class="row g-3" style="margin-top: 2%;">
+                                   <div class="col-md-6 col-6">
+   <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Semester Fee:</h4>
+               <h4><strike>INR 35,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 24,500</h4>
+            </div>
+            <small>Scholarship Applied</small>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-6 col-xs-12 nocostblock">
+   <div class="card h-100 br-10 border-0" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">No-Cost EMI:</h4>
+               <h4><strike></strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block emi-block">
+                <h4>Starting at</h4>
+                <h4>INR 3,956<sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+</div>
+                   
+      </div>
+  <p style="font-size: 13px;margin-top: 2%;margin-bottom: 0;">- Early Bird Scholarship is available for limited time.</p>
+  <p style="font-size: 13px;">- Above fees include the examination fee of Rs. 2500/- per semester.</p>
+                        </div>
+                    </div>
+
+                   
+
+
+                </div>
+                
+        </div>
+    </div></section>
+   <a href="" class="primary-btn" id="primaryBtn1">Apply Now</a>
+  </div>  
+       </div>
+
+<!-- Modal MCA -->
+    <div id="customModal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn2">&times;</span>
+   <section class="fee-section" id="fees">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-12  col-xs-12">
+                    <div class="page-heading pb-0">
+                        <p style="font-size: 18px;font-weight:bold;color: red;">Avail 20% Early Bird Scholarship on MCA Program Fee</p>
+                        <p style="font-size: 18px;"><span style="color: #61b239;font-weight: bold;font-size: 19px;">Total Program Fee:</span>
+                         <strike>INR 1,20,000</strike> <span style="font-weight:bold;">INR 96,000</span></p>
+                    </div>
+                    <div class="fee-section__table">
+                        <div class="">
+                             <div class="row g-3" style="margin-top: 2%;">
+                                                                   <div class="col-md-6 col-6">
+    <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">One Time Fee:</h4>
+               <h4><strike>INR 1,16,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 92,000</h4>
+            </div>
+            <small>Scholarship + 4,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                                
+                                  <div class="col-md-6 col-6 col-xs-12">
+     <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Annual Fee:</h4>
+               <h4><strike>INR 58,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 46,000</h4>
+            </div>
+            <small>Scholarship + 2,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                             </div>
+                            <div class="row g-3" style="margin-top: 2%;">
+                                   <div class="col-md-6 col-6">
+   <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Semester Fee:</h4>
+               <h4><strike>INR 30,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 24,000</h4>
+            </div>
+            <small>Scholarship Applied</small>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-6 col-xs-12 nocostblock">
+   <div class="card h-100 br-10 border-0" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">No-Cost EMI:</h4>
+               <h4><strike></strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block emi-block">
+                <h4>Starting at</h4>
+                <h4>INR 3,872<sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+</div>
+                   
+      </div>
+  <p style="font-size: 13px;margin-top: 2%;margin-bottom: 0;">- Early Bird Scholarship is available for limited time.</p>
+  <p style="font-size: 13px;">- Above fees include the examination fee of Rs. 2500/- per semester.</p>
+                        </div>
+                    </div>
+
+                   
+
+
+                </div>
+               
+    </div></section>
+   <a href="" class="primary-btn" id="primaryBtn2">Apply Now</a>
+  </div> 
+    </div>
+
+    <!-- Modal BBA -->
+    <div id="customModal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn3">&times;</span>
+   <section class="fee-section" id="fees">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-12  col-xs-12">
+                    <div class="page-heading pb-0">
+                        
+                        <p style="font-size: 18px;font-weight:bold;color: red;">Avail 15% Early Bird Scholarship on BBA Program Fee</p>
+                        <p style="font-size: 18px;"><span style="color: #61b239;font-weight: bold;font-size: 19px;">Total Program Fee:</span>
+                         <strike>INR 1,20,000</strike> <span style="font-weight:bold;">INR 1,02,000</span></p>
+                    </div>
+                    <div class="fee-section__table">
+                        <div class="">
+                             <div class="row g-3" style="margin-top: 2%;">
+                                                                   <div class="col-md-6 col-6">
+    <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">One Time Fee:</h4>
+               <h4><strike>INR 1,14,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 96,000</h4>
+            </div>
+            <small>Scholarship + 6,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                                
+                                  <div class="col-md-6 col-6 col-xs-12">
+     <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Annual Fee:</h4>
+               <h4><strike>INR 38,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 32,000</h4>
+            </div>
+            <small>Scholarship + 2,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                             </div>
+                            <div class="row g-3" style="margin-top: 2%;">
+                                   <div class="col-md-6 col-6">
+   <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Semester Fee:</h4>
+               <h4><strike>INR 20,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 17,000</h4>
+            </div>
+            <small>Scholarship Applied</small>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-6 col-xs-12 nocostblock">
+   <div class="card h-100 br-10 border-0" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">No-Cost EMI:</h4>
+               <h4><strike></strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block emi-block">
+                <h4>Starting at</h4>
+                <h4>INR 2,693<sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+</div>
+                   
+      </div>
+  <p style="font-size: 13px;margin-top: 2%;margin-bottom: 0;">- Early Bird Scholarship is available for limited time.</p>
+  <p style="font-size: 13px;">- Above fees include the examination fee of Rs. 2500/- per semester.</p>
+                        </div>
+                    </div>
+
+                   
+
+
+                </div>
+                
+        </div>
+    </div></section>
+ <a href="" class="primary-btn" id="primaryBtn3">Apply Now</a>
+  </div> 
+    </div>
+
+    <!-- Modal BCA -->
+    <div id="customModal4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn4">&times;</span>
+   <section class="fee-section" id="fees">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-12  col-xs-12">
+                    <div class="page-heading pb-0">
+                        <p style="font-size: 18px;font-weight:bold;color: red;">Avail 15% Early Bird Scholarship on BCA Program Fee</p>
+                        <p style="font-size: 18px;"><span style="color: #61b239;font-weight: bold;font-size: 19px;">Total Program Fee:</span>
+                         <strike>INR 1,20,000</strike> <span style="font-weight:bold;">INR 1,02,000</span></p>
+                    </div>
+                    <div class="fee-section__table">
+                        <div class="">
+                             <div class="row g-3" style="margin-top: 2%;">
+                                                                   <div class="col-md-6 col-6">
+    <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">One Time Fee:</h4>
+               <h4><strike>INR 1,14,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 96,000</h4>
+            </div>
+            <small>Scholarship + 6,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                                
+                                  <div class="col-md-6 col-6 col-xs-12">
+     <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Annual Fee:</h4>
+               <h4><strike>INR 38,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 32,000</h4>
+            </div>
+            <small>Scholarship + 2,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                             </div>
+                            <div class="row g-3" style="margin-top: 2%;">
+                                   <div class="col-md-6 col-6">
+   <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Semester Fee:</h4>
+               <h4><strike>INR 20,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 17,000</h4>
+            </div>
+            <small>Scholarship Applied</small>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-6 col-xs-12 nocostblock">
+   <div class="card h-100 br-10 border-0" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">No-Cost EMI:</h4>
+               <h4><strike></strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block emi-block">
+                <h4>Starting at</h4>
+                <h4>INR 2,693<sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+</div>
+                   
+      </div>
+  <p style="font-size: 13px;margin-top: 2%;margin-bottom: 0;">- Early Bird Scholarship is available for limited time.</p>
+  <p style="font-size: 13px;">- Above fees include the examination fee of Rs. 2500/- per semester.</p>
+                        </div>
+                    </div>
+
+                   
+
+
+                </div>
+        </div>
+    </div></section>
+    <a href="" class="primary-btn" id="primaryBtn4">Apply Now</a>
+  </div> 
+    </div>
+
+    <!-- Modal BA -->
+    <div id="customModal5" class="modal">
+       <div class="modal-content">
+            <span class="close-btn" id="closeBtn5">&times;</span>
+   <section class="fee-section" id="fees">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-12  col-xs-12">
+                    <div class="page-heading pb-0">
+                        <p style="font-size: 18px;font-weight:bold;color: red;">Avail 15% Early Bird Scholarship on BA Program Fee</p>
+                        <p style="font-size: 18px;"><span style="color: #61b239;font-weight: bold;font-size: 19px;">Total Program Fee:</span>
+                         <strike>INR 72,000</strike> <span style="font-weight:bold;">INR 61,200</span></p>
+                    </div>
+                    <div class="fee-section__table">
+                        <div class="">
+                             <div class="row g-3" style="margin-top: 2%;">
+                                                                   <div class="col-md-6 col-6">
+    <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">One Time Fee:</h4>
+               <h4><strike>INR 66,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 55,200</h4>
+            </div>
+            <small>Scholarship + 6,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                                
+                                  <div class="col-md-6 col-6 col-xs-12">
+     <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Annual Fee:</h4>
+               <h4><strike>INR 22,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 18,400</h4>
+            </div>
+            <small>Scholarship + 2,000 Additional Concession Applied</small>
+        </div>
+    </div>
+</div>
+                             </div>
+                            <div class="row g-3" style="margin-top: 2%;">
+                                   <div class="col-md-6 col-6">
+   <div class="card h-100 br-10 border-0" style="background: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">Semester Fee:</h4>
+               <h4><strike>INR 12,000</strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block">
+             
+                <h4>INR 10,200</h4>
+            </div>
+            <small>Scholarship Applied</small>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-6 col-xs-12 nocostblock">
+   <div class="card h-100 br-10 border-0" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="card-body" style="font-size: 24px;">
+        <div class="fees-block" style="display: flex; justify-content: space-between; align-items: center;">
+                <h4 style="color: #61b239;">No-Cost EMI:</h4>
+               <h4><strike></strike></h4>
+            </div></div>
+        <div class="card-footer border-0 bg-transparent pt-0" style="color: #000;text-align: center;">
+            <div class="fees-block emi-block">
+                <h4>Starting at</h4>
+                <h4>INR 3,097<sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+</div>
+                   
+      </div>
+  <p style="font-size: 13px;margin-top: 2%;margin-bottom: 0;">- Early Bird Scholarship is available for limited time.</p>
+  <p style="font-size: 13px;">- Above fees include the examination fee of Rs. 2500/- per semester.</p>
+                        </div>
+                    </div>
+
+                   
+
+
+                </div>
+                
+        </div>
+    </div></section>
+    <a href="" class="primary-btn" id="primaryBtn5">Apply Now</a>
+  </div> 
+    </div>
+
+
+            <style>
+
+         
+    @media only screen and (max-width: 600px) {
+    .header__top.py-2 {
+    text-align: center;
+}
+section.hero-banner {
+    margin-top: 20%;
+}
+#header.slideDown {
+    top: 70px !important;
+}
+}
+@media only screen and (min-width: 1199px) {
+.d-flex {
+    display: flex!important;
+}
+
+#header.slideDown {
+    top: 38px !important;
+}
+/*
+ .tophead i.fa-whatsapp{
+    background: #61b239;
+    padding: 5px 10px;
+    border-radius: 5px;
+  } */
+}
+
+.col-lg-5 .header-social a {
+    margin-left: 15px !important;
+    text-decoration: inherit !important;
+    color: #fff !important;
+}
+.tophead{
+    z-index: 9999;
+}
+.tophead i.fa {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-bottom: 7px;
+}
+
+.header_btn span {
+    margin: 0!important;
+    font-size: 15px;
+}
+.header_btn span small {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+}
+.header_btn a.btn:hover {
+    background: #0081cd !important;
+    border: 1px solid #0081cd !important;}
+.header_btn a.btn {
+    background: #c9001a !important;
+    border: 1px solid #c9001a !important;
+}
+.admhead {
+    padding-bottom: 3px !important;
+    padding-top: 9px !important;
+}
+.divider{
+    padding:0px !important;
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9TK74RX55"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M9TK74RX55');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11033217934"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11033217934');
+</script>
+
+    <div class="progress"></div>
+
+    <header class="header shadow shadow-sm tophead">
+   
+
+      <div class="header__top py-2" style="background: #064290 !important;color: #fff;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="header__top--right d-flex justify-content-center">
+                            <div class="header-social d-flex align-items-center announcement">
+                <p><b>Announcement:</b> Official website of Uttaranchal University's Online Degree Program is <a style="margin: inherit;color: #fff;font-weight: bold;" href="index.html">www.onlineuttaranchaluniversity.com</a></p>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+              <div class="col-lg-5">
+                        <div class="header__top--right d-flex justify-content-center">
+                            <div class="header-social d-flex align-items-center">
+                <p>
+                  
+
+ <a style="color: #fff;" href="contact.html">
+                  Contact Us
+                    
+                </a>
+                     <a style="color: #fff;" href="disclosure.html">Disclosures</a>
+
+                    <a style="color: #fff;" href="https://api.whatsapp.com/send?phone=917617774454&text=Hi" target="_blank">
+                   <span> <i class="fa fa-whatsapp whatsapp-color" aria-hidden="true"></i> </span>
+                   <span class="sicons">Whatsapp</span>
+                </a>
+         
+         
+            </p>
+                                
+                                
+                                
+                            </div>
+
+                           
+                        </div>
+                    </div></div>
+            </div>
+        </div>
+
+
+    </header>
+    
+
+    <header class="header shadow shadow-sm slideDown" id="header">
+   
+        <div class="header__center py-3">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="header__center--left d-flex align-items-center justify-content-between">
+                   <div class="uu-logo d-flex align-items-center">
+                        <a href="index.html" class="uu-pc-logo me-3" style="opacity: 1;" ><img src="assets/24_onlineUU.png" alt="Uttranchal University" title="Uttranchal University" width="260"></a>
+                      
+                    </div>
+                    <div class="uu-admission-dd ms-5 d-flex align-items-center">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle btn-lg btn-default" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs And Degrees
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="mba.html">Master of Business Administration (MBA)</a></li>
+                                <li><a class="dropdown-item" href="mca.html">Master of Computer Applications (MCA)</a></li>
+                                <li><a class="dropdown-item" href="bba.html">Bachelor of Business Administration (BBA)</a></li>
+                                <li><a class="dropdown-item" href="bca.html">Bachelor of Computer Applications (BCA)</a></li>
+                                <li><a class="dropdown-item" href="ba.html">Bachelor of Arts (BA)</a></li>
+                      <li><a class="dropdown-item" href="https://www.uudoon.in/management/mba-executive.php" target="_blank">Executive MBA</a></li>  
+                            </ul>
+                        </div>
+                        <a href="apply.html" class="btn btn-lg btn-primary ms-2">Apply Now</a>
+                    </div>
+                </div>
+                <div class="header__center--right d-flex align-items-center justify-content-lg-end justify-content-center">
+                    <div class="headerApply d-flex align-items-center">
+                        <div class="headerApply__btn ms-4"><a href="about.html" class="btn btn-lg btn-default">About Us</a>
+                            <!-- <a href="https://student.uttaranchaluniversity.ac.in/" target="_blank" class="btn btn-lg btn-info">ERP Login</a> -->
+                        </div>
+                    </div>
+                </div>
+                 <div class="d-flex header_btn hidden-xs">
+                        <a href="tel:18002124454" class="btn btn-lg btn-info text-start d-flex align-items-center text-white admhead">
+                        
+                        <span class="d-block ms-2">
+                        <small class="d-block text-capitalize">Admission Helpline</small>18002124454
+                        </span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="overlay-bg"></div>
+    </header>
+
+
+    
+     <section class="hero-banner apply-banner position-relative overflow-hidden pt-8 pb-8">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-banner__content text-white">
+                        <div class="main-heading text-uppercase mb-3">
+                            <!-- <div class="dateHightlight hidden-sm" style="margin-bottom: 5%;">
+      <div class="left">
+        
+        <div>
+       <span><b>Limited seats available!</b></span>
+  <span class="divider">|</span>
+        <span><b>Last date of application : 31st March 2025</b></span> 
+        </div>
+      </div>
+    </div>  -->                            <h1>Earn your degree online from a <span style="color:#fff;font-weight: bold;">NAAC A+</span> <br><span> Accredited University</span></h1>
+                        </div>
+                        <p>UU provides high-quality educational opportunities with exemplary support services.</p>
+                        <ul class="list-unstyled m-0 list-icon-1 multiline-li">
+                            <li>Live & Recorded Lectures</li>
+                            <li>Academic Mentorship with e-SLM</li>
+                            <li>Advanced LMS with Digital library</li>
+                            <li>100% Placement Assistance</li>
+                            <li>Affordable Fee with No Cost EMI</li>
+                            <li>Equivalent to Campus Degree</li>
+                        </ul>
+                    <div class="marquee-container bottom">
+    <div class="marquee">
+      <!-- First set of messages -->
+      <div class="marquee-item">
+        <span class="icon">&#128226;</span> Avail 30% Early Bird Scholarship
+      </div>
+      <div class="marquee-item">
+        <span class="icon">&#128226;</span> Last Date of Admission : 12th September 2026      </div>
+      <div class="marquee-item">
+        <span class="icon">&#128226;</span> Avail 30% Early Bird Scholarship
+      </div>
+      <div class="marquee-item">
+        <span class="icon">&#128226;</span> Last Date of Admission : 12th September 2026      </div>
+     
+    </div>
+  </div>
+                        <!-- <a href="apply.html" class="btn btn-lg btn-primary mt-4">Apply Now</a> -->
+                        
+                    </div>
+                </div>
+          <div class="col-lg-6">                     <div class="applyForm p-4">
+                   <div class="page-sub-heading">
+                                 <h3 class="text-center">Admissions Open for 2026-2027</h3>
+                          
+               <!--    <h3 class="text-center">Admission Closed for January 2026 Session</h3> 
+                           <p class="text-center">For any admission query, call 18002124454</p>  
+                        </div> 
+                        -->
+                        
+       <div id="registration-box">
+  <div class="tab-content active" id="new-user-content">
+     <div id="lsq-portal-widget-ae8d42f1-7a3a-11ee-8d02-062290c66066-b5269297-aaca-4bad-a736-e1938a8613e3"
+    class="lsq-portal-widget lsq-form-widget">
+    <script src="https://portal-widgets.lsqportal.com/assets/bootstrap-widget.js"
+        data-widget-id="ae8d42f1-7a3a-11ee-8d02-062290c66066"
+        data-version-id="b5269297-aaca-4bad-a736-e1938a8613e3"
+        data-formjs="https://dhx9mmhpfsala.cloudfront.net/cdn/externalforms/r21/js/lsq.form.js"
+        data-URL="https://portal-widgets.lsqportal.com"
+        onload="window['___lsq-portal-widget-helpers___'].bootstrapLSQWidget(event)"
+        charset="utf-8">
+    </script>
+</div>
+  </div>
+
+  <div class="tab-content" id="already-registered-content">
+    <div id="email-form" style="margin-top:5%;">
+  <input type="email" placeholder="Enter your Registered Email Address" id="email" name="email" required>
+  <div class="align-cn">
+  <button id="submitBtn" onclick="handleFormSubmit()" style="text-transform: capitalize;">Submit</button>
+</div>
+  
+
+  <div id="response-message"></div>
+</div>
+  </div>
+<div class="align-cn">
+  <button id="new-user-tab" class="active-tab" style="margin-top: 0px !important;">New User</button>
+  <button id="already-registered-tab">Already Registered?</button>
+</div>
+</div>    
+
+
+
+                    </div>
+
+
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="programs-section pt-8 pb-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="programs-section__content mb-5">
+                        <div class="page-heading">
+                            <h2 class="text-uppercase">Explore <br>Our <span style="color: var(--text-green)">Programs</span></h2>
+                        </div>
+                        <p>You will learn from the best at Uttaranchal University, as we impart world-class education in the true sense with our leading international faculty</p>
+                        <ul class="list-unstyled m-0 p-0 mt-4">
+                            <li>
+                                <img src="assets/images/icon-1.png" alt="">
+                                <span>Recorded video content by top notch faculty</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/icon-2.png" alt="">
+                                <span>Interactive live lectures and discussion through Chat & Discussion Forum</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/icon-3.png" alt="">
+                                <span>Placement assistance including CV workshops & mock interviews</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="page-sub-heading">
+                        <h3><span style="color: var(--text-green)">Postgraduate </span>Programs</h2>
+                        <small>(After Graduation)</small>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="card program-section__thumb border-0 h-100">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/program-thumb-1.jpg" alt="" class="w-100 br-10">
+                                </div>
+
+                                <div class="card-footer p-0 bg-transparent border-0 mt-3">
+                                    <h5 class="mb-3">Master of Business Administration (MBA)</h5>
+                                    <!-- <a href="mba.html" class="btn btn-sm btn-primary">View Program</a> -->  <a href="downloads/brochure-mba.pdf" class="btn btn-sm btn-default dwnldb">Download Brochure</a>
+                                    <a href="#" class="btn btn-sm btn-default dwnldopn" id="openModalBtn">Avail 30% Scholarship</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card program-section__thumb border-0 h-100">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/program-thumb-2.jpg" alt="" class="w-100 br-10">
+                                </div>
+                                <div class="card-footer p-0 bg-transparent border-0 mt-3">
+                                    <h5 class="mb-3">Master of Computer Applications (MCA)</h5>
+                                   <!--  <a href="mca.html" class="btn btn-sm btn-primary">View Program</a> --> <a href="downloads/brochure-mca.pdf" class="btn btn-sm btn-default dwnldb">Download Brochure</a>
+                                    <a href="#" class="btn btn-sm btn-default dwnldopn" id="openModalBtn2">Avail 20% Scholarship</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="page-sub-heading">
+                        <h3><span style="color: var(--text-green)">Undergraduate </span>Programs</h2>
+                        <small>(After 12th)</small>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card program-section__thumb border-0 h-100">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/program-thumb-3.jpg" alt="" class="w-100 br-10">
+                                </div>
+                                <div class="card-footer p-0 bg-transparent border-0 mt-3">
+                                    <h5 class="mb-3">Bachelor of Business Administration (BBA)</h5>
+                                   <!--  <a href="bba.html" class="btn btn-sm btn-primary">View Program</a> -->  <a href="downloads/brochure-bba.pdf" class="btn btn-sm btn-default dwnldb">Download Brochure</a>
+                                    <a href="#" class="btn btn-sm btn-default dwnldopn" id="openModalBtn3">Avail 15% Scholarship</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card program-section__thumb border-0 h-100">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/program-thumb-4.jpg" alt="" class="w-100 br-10">
+                                </div>
+                                <div class="card-footer p-0 bg-transparent border-0 mt-3">
+                                    <h5 class="mb-3">Bachelor of Computer Applications (BCA)</h5>
+                                  <!--   <a href="bca.html" class="btn btn-sm btn-primary">View Program</a> --> <a href="downloads/brochure-bca.pdf" class="btn btn-sm btn-default dwnldb">Download Brochure</a>
+                                    <a href="#" class="btn btn-sm btn-default dwnldopn" id="openModalBtn4">Avail 15% Scholarship</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="card program-section__thumb border-0 h-100">
+                                <div class="card-body p-0">
+                                    <img src="assets/images/program-thumb-5.jpg" alt="" class="w-100 br-10">
+                                </div>
+                                <div class="card-footer p-0 bg-transparent border-0 mt-3">
+                                    <h5 class="mb-3">Bachelor of Arts (BA)</h5>
+                               <!--      <a href="ba.html" class="btn btn-sm btn-primary">View Program</a> --> <a href="downloads/brochure-ba.pdf" class="btn btn-sm btn-default dwnldb">Download Brochure</a>
+                                    <a href="#" class="btn btn-sm btn-default dwnldopn" id="openModalBtn5">Avail 15% Scholarship</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-section position-relative overflow-hidden pt-8 pb-8">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6 h-100 d-flex align-items-center align-self-end offset-lg-6">
+                    <div class="advantages-section__content text-white">
+                        <div class="page-heading text-uppercase mb-3">
+                            <h1>THE BENEFITS OF ENROLLING IN  <span style="color: var(--text-green)">THE ONLINE PROGRAMS@UU</span></h1>
+                        </div>
+                        <p>With our online programs, you get the best of both world's- the comfort & flexibility of online education, with the equivalence that is acquired through an on-campus, conventional Degree.</p>
+                        
+                        <div class="row advantages-section__li g-4 mt-4 mb-4">
+                            <div class="col-sm-6">
+                                <img src="assets/images/adv-icon-1.png" alt="">
+                                <span>LIVE Classes by Faculty members of International Repute</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="assets/images/adv-icon-2.png" alt="">
+                                <span>Career Assistance & Exclusive Virtual Job Fairs</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="assets/images/adv-icon-3.png" alt="">
+                                <span>Exemplary Employer Ratings of Various Programs</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="assets/images/adv-icon-4.png" alt="">
+                                <span>International Academia-Industry Collaborations </span>
+                            </div>
+                        </div>
+
+                        <a href="apply.html" class="btn btn-lg btn-primary mt-2">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages-section__image h-100">
+            <img src="assets/images/banner-image-3.jpg" alt="" style="filter: grayscale(1)">
+        </div>
+    </section>
+
+    <section class="ranking-section pt-8 pb-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ranking-section__content" style="margin-top: 8%;">
+                        <div class="page-heading">
+                            <h2 class="text-uppercase"><span style="color:#499DCE">Our Statutory Approvals,</span>  <br><span style="color: #c9001a;">Accreditations, Memberships & Rankings</span></h2>
+                        </div>
+                        <p>The University came into establishment in 2013, vide Uttaranchal University Act, 2012 (Uttarakhand Act. No. 11 of 2013) as a Private University and is located in Dehradun, the Capital city of the Indian state of Uttarakhand. </p>
+                        <p>The Uttaranchal University has been recognized by the University Grants Commission, Government of India under Section 2(f) and 12(B) of the UGC Act, 1956 and other statutory bodies of the State and the nation. Its lush green campus is situated on NH-72, Dehradun- India.</p>
+<!--
+                        <a href="https://www.uudoon.in/placements/" target="_blank" class="btn btn-lg btn-primary mt-2">Read More</a>  -->
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ranking-section__logos">
+                          <style>
+   @media only screen and (min-width: 1024px) {
+   .acc_ranking .col-lg-2.col-md-2.col-sm-2.col-2 {
+    width: 20%;
+    padding: 5px;
+}
+}
+.ranking-section__logos {
+    padding-left: 30px;
+}
+@media only screen and (max-width: 1023px) {
+  .col-lg-2.col-md-2.col-sm-2.col-2 {
+    width: 20%;
+}
+}
+</style>
+
+<section class="placementLogos-section acc_ranking">
+
+<div class="container" style="padding: 0;">
+            <div class="row">
+                <div class="col-lg-12">
+               
+                   
+                    <div class="row g-3 mb-12">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/award-logo-2.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+                           <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/award-logo-1.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+                           <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/aicte-logo.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+ <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/07.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/03.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+                         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/05.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/04.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+ <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/WES.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+  <div class="col-lg-2 col-md-2 col-sm-2 col-2 mgl">
+                            <img src="assets/images/06.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+                          <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/09.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+<div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/02.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+                           <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/02.png" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>  
+
+
+                           <div class="col-lg-2 col-md-2 col-sm-2 col-2 mgb">
+                            <img src="assets/images/award-logo-8.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+
+                         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/10.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+
+                         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <img src="assets/images/08.jpg" alt="" class="w-100 shadow border-1 br-10 p-2">
+                        </div>
+
+                      
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+    </section>                      <!--  <div class="row g-3 justify-content-center">
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-2.jpg" alt="UGC Entitled Uttaranchal University Online">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-1.jpg" alt="NAAC Approved Online Degree Programs">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-3.jpg" alt="Association of Indian Universities">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-9.jpg" alt="WURI Approved">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-7.jpg" alt="UN Academic Impact">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-6.jpg" alt="QCI">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/award-logo-8.jpg" alt="ISO">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <img src="assets/images/aicte-logo.jpg" alt="AICTE Approved Uttaranchal University Online Programs">
+                            </div>
+                        </div>  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="alumni-section pt-8 pb-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="alumni-section__content text-center">
+                        <div class="page-heading">
+                            <h2 class="text-uppercase">Where our <span style="color: var(--text-green)">Alumni Work</span></h2>
+                        </div>
+                        <p>Quality has been, indeed, the USP of Uttaranchal University Placement. Ever since the inception of its integral institutes, Law College Dehradun (LCD), Uttaranchal Institute of Technology (UIT) and Uttaranchal Institute of Management (UIM) and with the establishment of Uttaranchal University in year 2013 the Uttaranchal University Placement scenario has been vibrant to say the least. </p>
+                        <p>A long list of notable recruiters speak itself regarding the excellent quality of products churned out by different "Academic Schools" of the Uttaranchal University.</p>
+
+                     <!--   <a href="https://www.uudoon.in/placements/index.php" target="_blank" class="btn btn-lg btn-primary mt-2">Read More</a>  -->
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="alumni-section__slider mt-5">
+            <div class="alumni-section__slider--item">
+                <div class="alumni-section__slider--item--content card br-10 green-gradient position-relative overflow-hidden border-0 p-2" style="background: url('assets/images/uu-bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <div class="card-body p-4 position-relative">
+                        <h3>AbhiNav <br>Ankur</h3>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 p-4 position-relative">
+                        <small>Placed at</small>
+                        <img src="assets/images/stu-1-logo.jpg" alt="">
+                    </div>
+                    <div class="stu-image">
+                        <img src="assets/images/stu-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-section__slider--item">
+                <div class="alumni-section__slider--item--content card br-10 green-gradient position-relative overflow-hidden border-0 p-2" style="background: url('assets/images/uu-bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <div class="card-body p-4 position-relative">
+                        <h3>Vanshika <br>Jakhmola</h3>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 p-4 position-relative">
+                        <small>Placed at</small>
+                        <img src="assets/images/stu-2-logo.jpg" alt="">
+                    </div>
+                    <div class="stu-image">
+                        <img src="assets/images/stu-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="alumni-section__slider--item">
+                <div class="alumni-section__slider--item--content card br-10 green-gradient position-relative overflow-hidden border-0 p-2" style="background: url('assets/images/uu-bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+                    <div class="card-body p-4 position-relative">
+                        <h3>Akshat <br>Puri</h3>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 p-4 position-relative">
+                        <small>Placed at</small>
+                        <img src="assets/images/logo-nutonix.jpg" alt="" height="45">
+                    </div>
+                    <div class="stu-image">
+                        <img src="assets/images/st-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <div class="testimoni-section-full position-relative">
+
+        <div class="page-heading mb-5 text-white">
+            <div class="container">
+                <h2 class="mb-3">STUDENTS SPEAK<br> HEAR WHAT OUR <br>STUDENTS <br>HAVE TO SAY</h2>
+            </div>
+        </div>
+
+        <div class="testimoni-section__slider pagination-style-1 h-100">
+            <div class="testimoni-section__slider--item border-0 position-relative pt-8 pb-8 gray-gradient h-100" style="background: url('assets/images/anushka-negi-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right ">
+                <div class="container">
+                    <div class="tsi-in text-white position-relative">
+                        <img src="assets/images/quote-icon-green.png" alt="">
+                        <p>I'd like to thank all of my faculty members and the placement cell for always assisting me in developing a better vision for myself. A special thanks to the faculty members who encouraged me and helped me see my potential and make the most of everything. Uttaranchal University and its placement faculty have worked tirelessly to groom us and make us corporate professionals. At Uttaranchal University, I had a fantastic learning experience.</p>
+                        <div class="st-name">
+                            <h5>Anushka Negi </h5>
+                            <small>MBA | NTT Data</small>
+                        </div>
+                        
+                        <div class="st-rating" style="color:gold">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimoni-section__slider--item border-0 position-relative pt-8 pb-8 gray-gradient h-100" style="background: url('assets/images/dimple-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right ">
+                <div class="container">
+                    <div class="tsi-in text-white  position-relative">
+                        <img src="assets/images/quote-icon-green.png" alt="">
+                        <p>Uttaranchal University has had a significant impact on my life. There was a distinct vibe in the college the day I walked in. The studies and placement at Uttaranchal University are excellent. I am grateful to all of the institute's faculty members for their ongoing efforts and guidance; I must say that Uttaranchal University is one of the most admirable higher learning institutes in Uttarakhand, with cutting-edge infrastructure and facilities. I consider myself fortunate to have received my MBA from Uttaranchal University.</p>
+                        <div class="st-name">
+                            <h5>Dimple Verma</h5>
+                            <small>MBA | ICICI Bank Pvt. Ltd.</small>
+                        </div>
+                        
+                        <div class="st-rating" style="color:gold">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimoni-section__slider--item border-0 position-relative pt-8 pb-8 gray-gradient h-100" style="background: url('assets/images/prashant-saini-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right ">
+                <div class="container">
+                    <div class="tsi-in text-white position-relative">
+                        <img src="assets/images/quote-icon-green.png" alt="">
+                        <p>A huge thank you to my mentor who helped me in every single step! The overall themes of being a lifelong learner, I build a strong network of mentors, and I feel proud to be a part of Uttaranchal University.</p>
+                        <div class="st-name">
+                            <h5>Prashant Saini</h5>
+                            <small>MBA | Zolo Stays & Propel Guru</small>
+                        </div>
+                        
+                        <div class="st-rating" style="color:gold">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimoni-section__slider--item border-0 position-relative pt-8 pb-8 gray-gradient h-100" style="background: url('assets/images/sahil-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right ">
+                <div class="container">
+                    <div class="tsi-in text-white position-relative">
+                        <img src="assets/images/quote-icon-green.png" alt="">
+                        <p>I found that the decision to study at Uttaranchal University was one of the best decisions of my life. Faculty members are known for their interactive teaching sessions and hence it is an ideal university for pursuing any program.</p>
+                        <div class="st-name">
+                            <h5>Sahil Khera</h5>
+                            <small>MCA | Smart Data</small>
+                        </div>
+                        
+                        <div class="st-rating" style="color:gold">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   <div class="testimoni-section__slider--item border-0 position-relative pt-8 pb-8 gray-gradient h-100" style="background: url('assets/images/sarah-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right ">
+                <div class="container">
+                    <div class="tsi-in text-white position-relative">
+                        <img src="assets/images/quote-icon-green.png" alt="">
+                        <p>My five years at Uttaranchal University have been a wonderful memory to cherish for lifetime. My experience at Uttaranchal University was full of learning and grooming. It gave me an opportunity to meet different kinds of people from around the world and learnt many things from them. The entire faculty members and department work tirelessly to shape one's future. I am grateful to the CRC Department for being supportive and for holding various sessions that assisted me in obtaining campus placements with Tommy Hilfiger and Info-Edge Ltd. Huge admiration, love, and devotion for the entire faculty members, UIM and CRC department.</p>
+                        <div class="st-name">
+                            <h5>Sarah Parveen</h5>
+                            <small>MBA | Info Edge Ltd</small>
+                        </div>
+                        
+                        <div class="st-rating" style="color:gold">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="testimoni-section__slider--item border-0 position-relative pt-8 pb-8 gray-gradient h-100" style="background: url('assets/images/vishal-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right ">
+                <div class="container">
+                    <div class="tsi-in text-white position-relative">
+                        <img src="assets/images/quote-icon-green.png" alt="">
+                        <p>As an MBA student, I gained the knowledge and confidence to use a variety of quantitative approaches in my work. As a result of the program, I've gained a number of valuable assets and approaches that I use on a daily basis. I found the mentors to be patient, understanding, and knowledgeable about each subject. I was able to obtain the best career opportunities because of the CRC's valuable soft skills training programs. I firmly believe that Uttaranchal University has altered my professional path for the better!</p>
+                        <div class="st-name">
+                            <h5>Vishal Yadav</h5>
+                            <small>MBA | PWC/VIALTO PARTNERS- Tax Associate</small>
+                        </div>
+                        
+                        <div class="st-rating" style="color:gold">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <section class="faculity-section pt-8 pb-8">
+        <div class="container">
+            <div class="page-heading text-center mb-5">
+                <h2 class="text-uppercase">WHAT DRIVES OUR APPROACH <br> <span style="color: var(--text-green)">TO ONLINE LEARNING</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-xxl-8">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="card br-10 shadow h-100">
+                                <div class="card-body p-4">
+                                    <h4>PEDAGOGICAL EFFECTIVENESS</h4>
+                                    <p>Led by experienced members of faculty, the Online programs are carefully designed and crafted mixing a wide variety of activities and relevant resources, and hence engage you into a proactive and effective learning journey.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-9 col-sm-12 col-8">
+                                            
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-4 text-end" style="opacity: 0.3;">
+                                            <img src="assets/images/experience.png" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="card br-10 shadow h-100">
+                                <div class="card-body p-4">
+                                    <h4>ENGAGEMENT</h4>
+                                    <p>Whether through teams of dedicated members of faculty or through regular synchronized events and exchange forums, we provide you with the best support and mentorship.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-9 col-sm-12 col-8">
+                                            
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-4 text-end" style="opacity: 0.3;">
+                                            <img src="assets/images/responsibility.png" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="card br-10 shadow h-100">
+                                <div class="card-body p-4">
+                                    <h4>PROBLEM SOLVING</h4>
+                                    <p>Online programs at Uttaranchal University nurture you to develop the analytical skills required to be applied to real life problems, add value to your projects and organisation.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-9 col-sm-12 col-8">
+                                            
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-4 text-end" style="opacity: 0.3;">
+                                            <img src="assets/images/puzzle.png" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="card br-10 shadow h-100">
+                                <div class="card-body p-4">
+                                    <h4>SOCIAL BONDS</h4>
+                                    <p>At Uttaranchal University, we believe that learning comes to a large extent from sharing insights and amalgamating different outlooks. We ensure that learning environment lends itself to constructive conversation between participants and symbiotic relationships based on trust and care.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-9 col-sm-12 col-8">
+                                            
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-4 text-end" style="opacity: 0.3;">
+                                            <img src="assets/images/social-media.png" alt="" class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4">
+                    <div class="row g-4">
+                        <div class="col-xxl-12 col-md-6 col-sm-6">
+                            <div class="card br-10 shadow h-100 p-0 br-10 overflow-hidden">
+                                <div class="card-body p-0">
+                                    <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            
+                                            <div  class="carousel-item active" data-bs-interval="4000">
+                                                <a class="" data-fancybox="gallery" href="https://youtu.be/RRcwx_gqzDE">
+                                                    <img src="assets/images/video-3.jpg" alt="" class="w-100">
+                                                </a>
+                                            </div>
+											<div class="carousel-item"  data-bs-interval="4000">
+                                                <a class="" data-fancybox="gallery" href="https://youtu.be/SSxZvQuxVY4">
+                                                    <img src="assets/images/video-1.jpg" alt="" class="w-100">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-12 col-md-6 col-sm-6">
+                            <div class="card br-10 shadow h-100 p-0 br-10 overflow-hidden">
+                                <div class="card-body p-0">
+                                    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="6000">
+                                                <a class="" data-fancybox="gallery" href="https://youtu.be/lGPmAQvmG4Y">
+                                                    <img src="assets/images/video-2.jpg" alt="" class="w-100">
+                                                </a>
+                                            </div>
+                                            <!-- <div class="carousel-item" data-bs-interval="4000"> -->
+                                                <!-- <a class="" data-fancybox="gallery" href="https://www.youtube.com/watch?v=aZr1yKZX-Qc"> -->
+                                                    <!-- <img src="assets/images/video-4.jpg" alt="" class="w-100"> -->
+                                                <!-- </a> -->
+                                            <!-- </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-section pt-8 pb-8 blue-gradient position-relative" style="background: url('assets/images/gallery-bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="container position-relative">
+            <div class="page-heading mb-5 text-white text-center">
+                <h2 class="mb-3 text-uppercase">Meeting the needs  <br> <span  style="color: var(--text-white)">of a Growing Workforce</span></h2>
+            </div>
+            <div class="gallery-section__slider">
+                <div class="card h-100 gallery-section__slider--item br-10 overflow-hidden mx-2 text-white bg-transparent">
+                    <div class="card-body">
+                        <h4>8% Job Growth in<br> the Management Sector</h4>
+                        <p>The overall employment in the management occupations is projected to grow 8 percent from 2021 to 2031, faster than the average for all occupations.</p>
+
+                        
+                    </div>
+                    <div class="card-footer border-0" style="background:rgba(1, 103, 153, 0.5)">
+                        <p>Courtesy: <b>U.S. BUREAU OF LABOUR STATISTICS</b></p>
+                    </div>
+                </div>
+                <div class="card h-100 gallery-section__slider--item br-10 overflow-hidden mx-2 text-white bg-transparent">
+                    <div class="card-body">
+                        <h4>4.5 Lakh Jobs <br>in IT Sector</h4>
+                        <p>The Indian IT industry is expected to grow 15.5% - the highest since 2011 - to reach $227 billion revenue; while adding about 4.5 lakh jobs during the year, according to the National Association of Software & Services Companies (NASSCOM).</p>
+                    </div>
+                    <div class="card-footer border-0" style="background:rgba(1, 103, 153, 0.5)">
+                        <p>Courtesy: <b>NASSCOM</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="placementLogos-section pt-8 pb-8">
+        <div class="container">
+            <div class="page-heading text-center pb-4">
+                <h2 class="text-uppercase">Academic <span style="color: var(--text-green)">Partners</span></h2>
+            </div>
+            <div class="placementLogos-section__slider pagination-style-1">
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-1.jpg" alt="">
+                </div>
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-2.jpg" alt="">
+                </div>
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-3.jpg" alt="">
+                </div>
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-4.jpg" alt="">
+                </div>
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-5.jpg" alt="">
+                </div>
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-6.jpg" alt="">
+                </div>
+                <div class="pl-item">
+                    <img src="assets/images/collab-logo-7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+	 <!-- Modal -->
+    <div class="modalNew" id="modalNew">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header text-center mb-3">
+                <h2 class="modal-title fs-5 m-auto">Choose your Nationality</h2>
+            </div>
+            <!-- <div class="modal-body text-center mb-3"> -->
+            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.  -->
+            <!-- </div> -->
+            <div class="modal-footer justify-content-center border-0">
+                <button type="button" class="btn btn-lg btn-info m-1 apply-btn" data-bs-dismiss="modal">National Applicant</button>
+                <a href="apply-international.html" type="button" class="btn btn-lg btn-primary m-1">International Applicant</a>
+            </div>
+        </div>
+    </div>
+	</div>
+    
+
+    
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footerInfo">
+                        <h4>About</h4>
+                        <p class="mt-2">The university came into establishment in 2013, vide Uttaranchal University Act, 2012 (Uttarakhand Act. No. 11 of 2013) as a Private University. It's located in Dehradun, the capital city of the Indian state of Uttarakhand. The Uttaranchal University has been recognized by the University Grants Commission, Government of India, under Sections 2(f) and 12(B) of the UGC Act, 1956, and other statutory bodies of the State and the nation. Its lush green campus is situated on NH-72, Dehradun, India. <a href="about.html">Read More</a></p>
+                          <div class="doon_link">
+                            <i class="fa fa-external-link me-2" aria-hidden="true"></i>
+                            <p> 
+                            <a target="_blank" href="https://uudoon.in" style="text-decoration:underline;">Click Here</a> <span>for Regular Degree Programs of Uttaranchal University</span></p>
+</div> 
+                                                   
+                          <style>
+                            .doon_link {
+background: #064290;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    color: #fff;
+    padding-bottom: 0px;
+}
+                          </style>                        >
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footerInfo">
+                        <h4>Admission</h4>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <li>
+                                <a href="mba.html">Master of Business Administration (MBA)</a>
+                            </li>
+                            <li>
+                                <a href="mca.html">Master of Computer Applications (MCA)</a>
+                            </li>
+                            <li>
+                                <a href="bba.html">Bachelor of Business Administration (BBA)</a>
+                            </li>
+                            <li>
+                                <a href="bca.html">Bachelor of Computer Applications (BCA)</a>
+                            </li>
+                            <li>
+                                <a href="ba.html">Bachelor of Arts (BA)</a>
+                            </li>
+                            <li>
+                                <a href="https://www.uudoon.in/management/mba-executive.php" target="_blank">Executive MBA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footerInfo">
+                        <h4>Others</h4>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <li>
+                                <a href="fee-refund-and-cancellation-policy.html">Fee Refund & Cancellation Policy</a>
+                            </li>
+                            <li>
+                                <a href="faculty.html">Faculty</a>
+                            </li>
+                            <li>
+                                <a href="ciqa.html">CIQA</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="assets/images/downloads/UGC-Portal-application.pdf" target="_blank">Application Submitted to UGCDEB</a>
+                            </li>
+                            <li>
+                                <a href="how-to-apply.html">How to Apply?</a>
+                            </li>
+                            <li><a href="disclosure.html">Disclosure</a></li>
+							<li>
+                                <a href="https://www.uudoon.in" target="_blank">Uttaranchal University</a>
+                            </li>
+                            
+                            <li><a href="downloads/equivalence_of_OL_degree.pdf" target="_blank">Equivalence of Online Mode Degree</a></li>
+                              <li>
+                                <a href="track.html">Document Dispatch Status</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footerInfo footerContact">
+                        <h4>Contact</h4>
+                        <p><span class="text-muted">Address:</span> <br>Premnagar, Dehradun - 248007, <br>Uttarakhand, INDIA</p>
+                        <ul class="m-0 p-0 list-unstyled">
+                           <li>
+                                <span class="text-muted">Phone:</span><br> <a href="tel:18002124454">18002124454</a> <span class="text-muted">/</span> <a href="tel:+917617774486">+91 7617774486</a>
+                            </li>
+                            <li>
+                                <a href="mailto:admissions@onlineuttaranchaluniversity.com"><span class="text-muted">Email:</span><br> admissions@onlineuttaranchaluniversity.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer-social">
+                            <p><span class="text-muted">Get Connected</span></p>
+                           <a href="https://www.facebook.com/onlineuuofficial" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                
+                                <a href="https://www.linkedin.com/company/onlineuu/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/uuonlineofficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+
+                        <!-- <div class="uu-varification">
+                            <a href="#">
+                                UU Degree Verification Service<br>
+                                <span>Click Here</span>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="row copyrights text-center position-relative">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="ft-logo">
+                        <img src="assets/images/uu-sm-logo-gray.svg" alt="">
+                    </div>
+                    <!-- <a href="#">Privacy Policy</a>
+                    <a href="#">Disclaimer</a> -->
+                    <p>&copy; Uttaranchal University</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- <div class="allNotification">
+        <button type="button" class="icon_bell"><i class="fa fa-bell" aria-hidden="true"></i></button>
+        <div class="allNotification__list border shadow-lg" style="
+    opacity: 1;
+    visibility: inherit;
+">
+          <ul class="list-unstyled p-0 m-0">
+            <li>
+                 <img src="31.jpg" style="max-width: 100%;">
+               <div class="time-left">
+            <p style="
+    margin-bottom: 0px;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    color:#c9001a;
+">Time Left!</p> 
+            <p id="demo" class="" style="
+    margin: 0px auto;
+    padding-top: 2%;
+"></p>
+</div>
+<style>
+    .allNotification__list li::before{
+        display: none;
+    }
+    button.icon_bell {
+    background: #499DCE;
+    color: #fff;
+    border: 0px;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+.allNotification .allNotification__list {
+    max-width: 300px !important;
+}
+}
+</style>
+               
+            </li>
+           
+        </ul>
+        </div>
+    </div>
+-->    <div class="gotoTop">
+        <button type="button" class="gotoTop__icon"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="rightFixed-btns">
+        <ul class="m-0 p-0 list-unstyled">
+       <li>
+                <a href="https://api.whatsapp.com/send?phone=917617774454&text=Hi" target="_blank">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <div class="rightFixed-btns__content">
+                        <small>WhatsApp Only</small>
+                        <span>7617774454</span>
+                    </div>
+                </a>
+            </li>  
+            <li>
+            </li>
+            <li>
+                <a href="tel:18002124454">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="rightFixed-btns__content">
+                        <small>Helpline No.</small>
+                        <span>18002124454</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <!-- javascripts files -->
+
+    <script src="assets/js/jquery.min.js?v=3.6.0"></script>
+    <script src="dist/js/bootstrap.min.js?v=2.1"></script>
+    <script src="assets/js/slick.min.js?v=2.1"></script>
+    <script src="assets/js/jquery.fancybox.min.js?v=2.1"></script>
+    <script src="assets/js/main.js?v=2.1"></script> 
+    <link rel="stylesheet" href="assets/css/form-widget.css?v=2.1">
+
+    <script>
+        $(document).ready(function() { 
+            $('#modalNew').slideDown(300); 
+            $('body').addClass('overflow-hidden'); 
+        });
+        
+        $(".dropdown-toggle").click(function() { 
+            $('.dropdown-menu').toggleClass("active");      
+        });
+        
+        $(".apply-btn").click(function() {  
+            $('#modalNew').addClass("d-none");  
+            $('body').removeClass('overflow-hidden');    
+        });
+
+       
+
+        
+    </script>
+
+    <script>
+  document.getElementById('new-user-tab').addEventListener('click', function () {
+    document.getElementById('new-user-content').classList.add('active');
+    document.getElementById('already-registered-content').classList.remove('active');
+    document.getElementById('new-user-tab').classList.add('active-tab');
+    document.getElementById('already-registered-tab').classList.remove('active-tab');
+  });
+
+  document.getElementById('already-registered-tab').addEventListener('click', function () {
+    document.getElementById('new-user-content').classList.remove('active');
+    document.getElementById('already-registered-content').classList.add('active');
+    document.getElementById('new-user-tab').classList.remove('active-tab');
+    document.getElementById('already-registered-tab').classList.add('active-tab');
+  });
+</script>
+
+   <script>
+     // Form submission handler with modern async/await
+let isSubmitting = false;
+
+async function handleFormSubmit(event) {
+    event?.preventDefault();
+    
+    if (isSubmitting) return;
+    
+    const emailInput = document.getElementById('email');
+    const submitBtn = document.getElementById('submitBtn');
+    const responseMessage = document.getElementById('response-message');
+    
+    // Client-side validation
+    const email = emailInput.value.trim();
+    if (!email || !isValidEmail(email)) {
+        showMessage(responseMessage, 'Please enter a valid email address', 'error');
+        return;
+    }
+    
+    // Set submitting state
+    isSubmitting = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    responseMessage.textContent = '';
+    
+    try {
+        const response = await fetch('call_email.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `email=${encodeURIComponent(email)}`
+        });
+        
+        if (!response.ok) {
+            throw new Error(`Server error: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            showMessage(responseMessage, data.message, 'success');
+            emailInput.value = ''; // Clear input on success
+        } else {
+            showMessage(responseMessage, data.error || 'Form is unavailable right now. Please email admissions@onlineuttaranchaluniversity.com or call 18002124454.', 'error');
+        }
+        
+    } catch (error) {
+        console.error('Email submission error:', error);
+        showMessage(responseMessage, 'Form is unavailable right now. Please email admissions@onlineuttaranchaluniversity.com or call 18002124454.', 'error');
+    } finally {
+        // Reset button state
+        isSubmitting = false;
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+    }
+}
+
+// Email validation helper
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Message display helper
+function showMessage(element, message, type) {
+    element.textContent = message;
+    element.style.color = type === 'success' ? '#22c55e' : '#ef4444';
+    element.style.display = 'block';
+    
+    // Auto-hide success messages after 5 seconds
+    if (type === 'success') {
+        setTimeout(() => {
+            element.style.display = 'none';
+        }, 5000);
+    }
+}
+
+// Optional: Add Enter key support
+document.getElementById('email')?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        handleFormSubmit(e);
+    }
+});
+    </script>
+
+<script>
+        // Modal 1 (MBA)
+        const modal = document.getElementById('customModal');
+        const openBtn = document.getElementById('openModalBtn');
+        const closeBtn = document.getElementById('closeBtn1');
+        const primaryBtn = document.getElementById('primaryBtn1');
+
+        openBtn.onclick = (e) => {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+        closeBtn.onclick = () => modal.style.display = 'none';
+        primaryBtn.onclick = () => modal.style.display = 'none';
+
+        // Modal 2 (MCA)
+        const modal2 = document.getElementById('customModal2');
+        const openBtn2 = document.getElementById('openModalBtn2');
+        const closeBtn2 = document.getElementById('closeBtn2');
+        const primaryBtn2 = document.getElementById('primaryBtn2');
+
+        openBtn2.onclick = (e) => {
+            e.preventDefault();
+            modal2.style.display = 'flex';
+        };
+        closeBtn2.onclick = () => modal2.style.display = 'none';
+        primaryBtn2.onclick = () => modal2.style.display = 'none';
+
+         // Modal 3 (BA)
+        const modal3 = document.getElementById('customModal3');
+        const openBtn3 = document.getElementById('openModalBtn3');
+        const closeBtn3 = document.getElementById('closeBtn3');
+        const primaryBtn3 = document.getElementById('primaryBtn3');
+
+        openBtn3.onclick = (e) => {
+            e.preventDefault();
+            modal3.style.display = 'flex';
+        };
+        closeBtn3.onclick = () => modal3.style.display = 'none';
+        primaryBtn3.onclick = () => modal3.style.display = 'none';
+
+          // Modal 4 (BBA)
+        const modal4 = document.getElementById('customModal4');
+        const openBtn4 = document.getElementById('openModalBtn4');
+        const closeBtn4 = document.getElementById('closeBtn4');
+        const primaryBtn4 = document.getElementById('primaryBtn4');
+
+        openBtn4.onclick = (e) => {
+            e.preventDefault();
+            modal4.style.display = 'flex';
+        };
+        closeBtn4.onclick = () => modal4.style.display = 'none';
+        primaryBtn4.onclick = () => modal4.style.display = 'none';
+
+            // Modal 5 (BBA)
+        const modal5 = document.getElementById('customModal5');
+        const openBtn5 = document.getElementById('openModalBtn5');
+        const closeBtn5 = document.getElementById('closeBtn5');
+        const primaryBtn5 = document.getElementById('primaryBtn5');
+
+        openBtn5.onclick = (e) => {
+            e.preventDefault();
+            modal5.style.display = 'flex';
+        };
+        closeBtn5.onclick = () => modal5.style.display = 'none';
+        primaryBtn5.onclick = () => modal5.style.display = 'none';
+
+        // Close modal when clicking outside
+        window.onclick = (e) => {
+            if (e.target === modal) modal.style.display = 'none';
+            if (e.target === modal2) modal2.style.display = 'none';
+            if (e.target === modal3) modal3.style.display = 'none';
+            if (e.target === modal4) modal4.style.display = 'none';
+            if (e.target === modal5) modal5.style.display = 'none';
+        };
+    </script>
+
+</body>
+
+</html>
+
+

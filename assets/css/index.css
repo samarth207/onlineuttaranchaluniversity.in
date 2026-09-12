@@ -1,6 +1,6 @@
 /* ============================================
    Online Uttaranchal University - Homepage CSS
-   Domain: onlineuttaranchaluniversity.in
+   Domain: onlineuttaranchaluniversity.com
    ============================================ */
 
 /* ---------- CSS Variables ---------- */
@@ -1070,7 +1070,6 @@ ul {
 }
 
 .fixed-buttons a.whatsapp { background: #25d366; }
-.fixed-buttons a.virtual-tour { background: var(--primary-blue); }
 .fixed-buttons a.phone { background: var(--primary-red); }
 
 /* ---------- Go to Top ---------- */
