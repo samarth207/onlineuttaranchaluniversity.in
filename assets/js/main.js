@@ -167,6 +167,124 @@ $('.gotoTop__icon').click(function() {
     $("html, body").animate({ scrollTop: '0' }, 600);
 });
 
+(function() {
+    function createApplyPopup() {
+        if (document.getElementById('uuApplyPopup')) return;
+
+        var overlay = document.createElement('div');
+        overlay.id = 'uuApplyPopup';
+        overlay.className = 'uu-apply-popup-overlay';
+        overlay.innerHTML = [
+            '<div class="uu-apply-popup" role="dialog" aria-modal="true" aria-labelledby="uuApplyPopupTitle">',
+            '  <button type="button" class="uu-apply-close" aria-label="Close">&times;</button>',
+            '  <div class="uu-apply-header">',
+            '    <span class="uu-apply-badge">Admissions Open</span>',
+            '    <h3 id="uuApplyPopupTitle">Apply for your preferred program</h3>',
+            '    <p>Share your details and our academic advisor will contact you shortly.</p>',
+            '  </div>',
+            '  <form class="uu-apply-form" novalidate>',
+            '    <div class="uu-form-grid">',
+            '      <label>',
+            '        <span>Full Name</span>',
+            '        <input type="text" name="name" placeholder="Your name" required>',
+            '      </label>',
+            '      <label>',
+            '        <span>Phone Number</span>',
+            '        <input type="tel" name="phone" placeholder="10-digit mobile number" required>',
+            '      </label>',
+            '      <label>',
+            '        <span>Email Address</span>',
+            '        <input type="email" name="email" placeholder="you@example.com" required>',
+            '      </label>',
+            '      <label>',
+            '        <span>Interested Program</span>',
+            '        <select name="program" required>',
+            '          <option value="">Select program</option>',
+            '          <option value="MBA">MBA</option>',
+            '          <option value="MCA">MCA</option>',
+            '          <option value="BBA">BBA</option>',
+            '          <option value="BCA">BCA</option>',
+            '          <option value="BA">BA</option>',
+            '          <option value="Executive MBA">Executive MBA</option>',
+            '        </select>',
+            '      </label>',
+            '    </div>',
+            '    <button type="submit" class="uu-apply-submit">Submit Enquiry</button>',
+            '  </form>',
+            '</div>'
+        ].join('');
+
+        document.body.appendChild(overlay);
+
+        overlay.addEventListener('click', function(event) {
+            if (event.target === overlay) {
+                closeApplyPopup();
+            }
+        });
+
+        overlay.querySelector('.uu-apply-close').addEventListener('click', closeApplyPopup);
+
+        overlay.querySelector('.uu-apply-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var form = event.currentTarget;
+            var required = form.querySelectorAll('[required]');
+            var valid = true;
+
+            required.forEach(function(field) {
+                if (!field.value.trim()) {
+                    valid = false;
+                    field.focus();
+                    field.style.borderColor = '#d92929';
+                } else {
+                    field.style.borderColor = '#dfe7f3';
+                }
+            });
+
+            if (!valid) return;
+
+            form.innerHTML = [
+                '<div class="uu-apply-success">',
+                '  <span class="uu-apply-badge">Thank You</span>',
+                '  <h4>Your enquiry has been received.</h4>',
+                '  <p>Our admissions team will contact you soon.</p>',
+                '</div>'
+            ].join('');
+
+            setTimeout(function() {
+                window.location.href = 'apply.html';
+            }, 1500);
+        });
+    }
+
+    function openApplyPopup() {
+        createApplyPopup();
+        var overlay = document.getElementById('uuApplyPopup');
+        if (!overlay) return;
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeApplyPopup() {
+        var overlay = document.getElementById('uuApplyPopup');
+        if (!overlay) return;
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+        setTimeout(function() {
+            overlay.remove();
+        }, 200);
+    }
+
+    document.addEventListener('click', function(event) {
+        var link = event.target.closest('a[href="apply.html"], a[href="/apply.html"], a[href="https://www.onlineuttaranchaluniversity.com/apply.html"]');
+        if (!link) return;
+
+        var text = (link.textContent || '').trim().toLowerCase();
+        if (link.getAttribute('href') === 'apply.html' || link.getAttribute('href') === '/apply.html' || text.indexOf('apply now') !== -1 || text.indexOf('apply') !== -1) {
+            event.preventDefault();
+            openApplyPopup();
+        }
+    });
+})();
 
 var new_scroll_position = 0;
 var last_scroll_position;
