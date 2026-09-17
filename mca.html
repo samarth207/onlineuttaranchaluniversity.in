@@ -2035,15 +2035,7 @@ section.hero-banner {
     .allNotification__list li::before{
         display: none;
     }
-</style>
-    <!-- Exit Intent Popup  -->
-
-    <div id="exitPopup" class="popup-overlay">
-        <div class="popup-content">
-            <button class="close-btn" onclick="closePopup()">&times;</button>
-            <div class="popup-right">
-                <div class="decorative-elements"></div>
-                <div class="person-image">
+</style>\n<div class="person-image">
                     <div class="person-placeholder"> <a href='apply.html'>   <img src='assets/12THSEPTEMBER.jpeg' style='max-width: 100%;'> </a>  </div>
                 </div>
             </div>
@@ -2146,7 +2138,7 @@ background: #064290;
                         <p><span class="text-muted">Address:</span> <br>Premnagar, Dehradun - 248007, <br>Uttarakhand, INDIA</p>
                         <ul class="m-0 p-0 list-unstyled">
                              <li>
-                                <span class="text-muted">Admission Helpline:</span><br> <a href="tel:18002124454">18002124454</a> <span class="text-muted">/</span> <a href="tel:+917617774486">+91 7617774486</a>
+                                <span class="text-muted">Admission Helpline:</span><br> <a href="tel:9266530366">9266530366</a>
                             </li>
                              <li>
                                 <span class="text-muted">Email:</span><br> <a href="mailto:admissions@onlineuttaranchaluniversity.com">admissions@onlineuttaranchaluniversity.com</a>
@@ -2241,166 +2233,7 @@ background: #064290;
 
 
     
-</script>
-
- <!-- exit pop up -->
-  <script>
-        class ExitIntentPopup {
-            constructor() {
-                this.isPopupVisible = false;
-                this.mouseLeaveDelay = 100;
-                this.sensitivity = 50;
-                this.cooldownTime = 3000;
-                this.lastTriggerTime = 0;
-                this.init();
-            }
-
-            init() {
-                this.addEventListeners();
-            }
-
-            addEventListeners() {
-                // Desktop exit intent detection
-                document.addEventListener('mouseleave', (e) => {
-                    if (e.clientY <= this.sensitivity && this.canTrigger()) {
-                        setTimeout(() => {
-                            this.showPopup();
-                        }, this.mouseLeaveDelay);
-                    }
-                });
-
-                // Additional trigger for mouse movement to top of page
-                document.addEventListener('mousemove', (e) => {
-                    if (e.clientY <= this.sensitivity && e.clientX > 100 && this.canTrigger()) {
-                        if (!this.exitTimer) {
-                            this.exitTimer = setTimeout(() => {
-                                this.showPopup();
-                                this.exitTimer = null;
-                            }, 500);
-                        }
-                    } else if (e.clientY > this.sensitivity && this.exitTimer) {
-                        clearTimeout(this.exitTimer);
-                        this.exitTimer = null;
-                    }
-                });
-
-                // Mobile/tablet detection
-                document.addEventListener('visibilitychange', () => {
-                    if (document.hidden && this.canTrigger()) {
-                        setTimeout(() => {
-                            if (document.hidden && this.canTrigger()) {
-                                this.showPopup();
-                            }
-                        }, 1000);
-                    }
-                });
-
-                // Keyboard shortcut detection
-                document.addEventListener('keydown', (e) => {
-                    if ((e.ctrlKey || e.metaKey) && (e.key === 'w' || e.key === 't' || e.key === 'l')) {
-                        if (this.canTrigger()) {
-                            e.preventDefault();
-                            this.showPopup();
-                        }
-                    }
-                });
-            }
-
-            canTrigger() {
-                const now = Date.now();
-                const timeSinceLastTrigger = now - this.lastTriggerTime;
-                return !this.isPopupVisible && timeSinceLastTrigger >= this.cooldownTime;
-            }
-
-            showPopup() {
-                if (this.isPopupVisible) return;
-                
-                this.isPopupVisible = true;
-                this.lastTriggerTime = Date.now();
-                
-                const popup = document.getElementById('exitPopup');
-                popup.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-                
-                console.log('Exit intent popup triggered at:', new Date().toLocaleTimeString());
-            }
-
-            hidePopup() {
-                this.isPopupVisible = false;
-                const popup = document.getElementById('exitPopup');
-                popup.style.display = 'none';
-                document.body.style.overflow = '';
-            }
-
-            reset() {
-                this.hidePopup();
-                this.lastTriggerTime = 0;
-                console.log('Exit intent popup system reset');
-            }
-
-            getStatus() {
-                return {
-                    isPopupVisible: this.isPopupVisible,
-                    lastTriggerTime: new Date(this.lastTriggerTime).toLocaleTimeString(),
-                    canTriggerNow: this.canTrigger(),
-                    cooldownRemaining: Math.max(0, this.cooldownTime - (Date.now() - this.lastTriggerTime))
-                };
-            }
-        }
-
-        // Initialize the exit intent popup
-   const exitIntent = new ExitIntentPopup();
-
-        // Popup control functions
-        function closePopup() {
-            exitIntent.hidePopup();
-        }
-
-       function stayOnPage() {
-    window.location.href = "apply.html";
-}
-
-
-        function leaveAnyway() {
-            exitIntent.hidePopup();
-            console.log('User chose to leave anyway');
-        }
-
-        function testPopup() {
-            exitIntent.showPopup();
-        }
-
-        function resetPopup() {
-            exitIntent.reset();
-        }
-
-        function showStatus() {
-            const status = exitIntent.getStatus();
-            console.log(`Popup Status:
-- Currently Visible: ${status.isPopupVisible}
-- Last Triggered: ${status.lastTriggerTime}
-- Can Trigger Now: ${status.canTriggerNow}
-- Cooldown Remaining: ${Math.round(status.cooldownRemaining / 1000)}s`);
-        }
-
-        // Close popup when clicking outside
-        document.getElementById('exitPopup').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closePopup();
-            }
-        });
-
-        // Close popup with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && exitIntent.isPopupVisible) {
-                closePopup();
-            }
-        });
-    </script>
-
-
- 
- <!-- <script>
+</script>\n<!-- <script>
         $(document).ready(function() { 
             $('#modalNew2').slideDown(300); 
             $('body').addClass('overflow-hidden'); 
