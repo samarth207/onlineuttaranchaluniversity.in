@@ -117,16 +117,31 @@ $('.breadcrumb li a').text(function() {
 });
 
 
-$('.allNotification__list').addClass(window.localStorage.toggled);
-$('.allNotification__icon').on('click', function() {
-    if (window.localStorage.toggled != "show") {
-        $('.allNotification__list').addClass("show", true);
-        window.localStorage.toggled = "show";
-    } else {
-        $('.allNotification__list').removeClass("show", false);
-        window.localStorage.toggled = "";
+$('.allNotification, .allNotification__icon, .allNotification__list, .doon_link').remove();
+
+// Keep contact actions consistent across legacy pages.
+(function() {
+    var phone = '9266530366';
+    var whatsapp = '919266530366';
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+        link.href = 'tel:' + phone;
+        link.textContent = link.textContent.replace(/\+?91?\s*18002124454|\+?91?\s*7617774454|\+?91?\s*7617774486|18002124454/g, phone);
+    });
+    document.querySelectorAll('a[href*="whatsapp.com"], a[href*="wa.me"]').forEach(function(link) {
+        link.href = 'https://wa.me/' + whatsapp;
+        link.textContent = link.textContent.replace(/\+?91?\s*7617774454|Whatsapp|WhatsApp/gi, phone);
+    });
+    document.querySelectorAll('a[href*="mba-executive.php"]').forEach(function(link) {
+        link.href = 'executive-mba.html';
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+    });
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    var node;
+    while (node = walker.nextNode()) {
+        node.nodeValue = node.nodeValue.replace(/18002124454|\+91\s*7617774454|\+91\s*7617774486/g, phone);
     }
-});
+})();
 
 
 

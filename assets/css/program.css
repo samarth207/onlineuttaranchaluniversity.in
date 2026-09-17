@@ -119,7 +119,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .program-hero::after {
-  content: '\\2192';
+  content: '';
   position: absolute;
   right: -100px;
   top: -100px;
@@ -648,7 +648,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 .admission-step::after {
-  content: '\\2192';
+  content: '\2192';
   position: absolute;
   right: -14px;
   top: 36px;
@@ -713,7 +713,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .footer { background: #1a1a2e; color: #ccc; padding: 50px 0 20px; }
 .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
 .footer-col h4 { color: var(--white); font-size: 18px; font-weight: 700; margin-bottom: 16px; position: relative; padding-bottom: 10px; }
-.footer-col h4::after { content: '\\2192'; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--primary-red); border-radius: 2px; }
+.footer-col h4::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 3px; background: var(--primary-red); border-radius: 2px; }
 .footer-col p { font-size: 13px; line-height: 1.7; }
 .footer-col ul li { margin-bottom: 8px; }
 .footer-col ul li a { color: #aaa; font-size: 13px; transition: color 0.3s; }

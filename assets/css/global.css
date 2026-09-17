@@ -1,7 +1,9 @@
-﻿/**.allNotification__list, .allNotification{
+﻿.allNotification,
+.allNotification__icon,
+.allNotification__list,
+.doon_link {
     display: none !important;
 }
-**/
 .allNotification__list li::before{
     visibility: hidden;
 }

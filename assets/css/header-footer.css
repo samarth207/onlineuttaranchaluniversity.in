@@ -58,6 +58,161 @@
     color: var(--text-green);
 }
 
+/* Keep the fixed contact controls consistent with the homepage. */
+.fixed-side-btns {
+    position: fixed !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 900 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+
+.fixed-side-btns a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 8px 0 0 8px !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    box-shadow: none !important;
+    transition: width 0.3s !important;
+}
+
+.fixed-side-btns .fsb-icon {
+    width: auto !important;
+    height: auto !important;
+    font-size: 20px !important;
+}
+
+.fixed-side-btns .fsb-label { display: none !important; }
+.fixed-side-btns .fsb-whatsapp { background: #25d366 !important; }
+.fixed-side-btns .fsb-phone { background: var(--primary-red) !important; }
+.fixed-side-btns .fsb-whatsapp .fsb-icon { background: #25d366 !important; }
+.fixed-side-btns .fsb-phone .fsb-icon { background: var(--primary-red) !important; }
+
+@media (max-width: 768px) {
+    .fixed-side-btns { display: none !important; }
+}
+
+/* Match the legacy program-page header to the homepage navbar. */
+body.pt-140 {
+    padding-top: 0 !important;
+}
+
+#header.slideDown {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+}
+
+#header.slideDown .header__center {
+    padding: 12px 0 !important;
+}
+
+#header.slideDown .header__center > .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+}
+
+#header.slideDown .header__center--left {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+}
+
+#header.slideDown .uu-pc-logo {
+    margin-right: 0 !important;
+}
+
+#header.slideDown .uu-pc-logo img {
+    width: 240px !important;
+    height: auto !important;
+}
+
+#header.slideDown .uu-admission-dd {
+    margin-left: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+#header.slideDown .uu-admission-dd .dropdown-toggle {
+    background: #fff !important;
+    color: var(--text-black) !important;
+    border: 2px solid #ccc !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+
+#header.slideDown .uu-admission-dd > .btn-default {
+    background: transparent !important;
+    color: var(--text-black) !important;
+    border: 0 !important;
+    padding: 10px 0 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+
+#header.slideDown .uu-admission-dd > .btn-primary {
+    background: #c9001a !important;
+    color: #fff !important;
+    border: 2px solid #c9001a !important;
+    border-radius: 5px !important;
+    padding: 10px 24px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+#header.slideDown .headerApply {
+    display: none !important;
+}
+
+#header.slideDown .header_btn a {
+    background: #c9001a !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    padding: 8px 18px !important;
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+}
+
+#header.slideDown .header_btn a:hover {
+    background: #a80015 !important;
+}
+
+#header.slideDown .header_btn span {
+    margin: 0 !important;
+    font-size: 15px !important;
+}
+
+#header.slideDown .header_btn span small {
+    display: block !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 768px) {
+    #header.slideDown .header__center > .container,
+    #header.slideDown .header__center--left {
+        flex-wrap: wrap !important;
+    }
+
+    #header.slideDown .header_btn {
+        display: none !important;
+    }
+}
+
 
 /* header */
 

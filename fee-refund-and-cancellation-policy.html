@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -436,7 +436,21 @@ section.hero-banner.program-banner.position-relative.overflow-hidden .row>*{
 .allNotification__list {
     bottom: 70px !important;
     }
-  </style></head>
+  </style>    <style>
+    .fixed-side-btns{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:9999;display:flex;flex-direction:column;gap:4px;}
+    .fixed-side-btns a{display:flex;align-items:center;border-radius:10px 0 0 10px;color:#fff;text-decoration:none;overflow:hidden;transition:all .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.2);}
+    .fsb-icon{width:48px;height:52px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+    .fsb-label{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .3s ease,padding .3s ease;padding:0;}
+    .fsb-label small{display:block;font-size:11px;opacity:.85;line-height:1.2;}
+    .fsb-label strong{display:block;font-size:13px;line-height:1.3;}
+    .fixed-side-btns a:hover .fsb-label{max-width:160px;padding:0 14px 0 4px;}
+    .fsb-whatsapp{background:#25d366;}
+    .fsb-whatsapp:hover{background:#1ebe5d;}
+    .fsb-phone{background:#c9001a;}
+    .fsb-phone:hover{background:#a80015;}
+    @media(max-width:768px){.fixed-side-btns{display:none;}}
+    </style>
+</head>
 
 <body class="pt-140">
 
@@ -450,18 +464,14 @@ section.hero-banner.program-banner.position-relative.overflow-hidden .row>*{
 section.hero-banner {
     margin-top: 20%;
 }
-#header.slideDown {
-    top: 70px !important;
-}
+#header.slideDown { top: 0 !important; }
 }
 @media only screen and (min-width: 1199px) {
 .d-flex {
     display: flex!important;
 }
 
-#header.slideDown {
-    top: 38px !important;
-}
+#header.slideDown { top: 0 !important; }
 /*
  .tophead i.fa-whatsapp{
     background: #61b239;
@@ -531,49 +541,6 @@ section.hero-banner {
     <div class="progress"></div>
 
     <header class="header shadow shadow-sm tophead">
-   
-
-      <div class="header__top py-2" style="background: #064290 !important;color: #fff;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="header__top--right d-flex justify-content-center">
-                            <div class="header-social d-flex align-items-center announcement">
-                <p><b>Announcement:</b> Official website of Uttaranchal University's Online Degree Program is <a style="margin: inherit;color: #fff;font-weight: bold;" href="index.html">www.onlineuttaranchaluniversity.com</a></p>
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-              <div class="col-lg-5">
-                        <div class="header__top--right d-flex justify-content-center">
-                            <div class="header-social d-flex align-items-center">
-                <p>
-                  
-
- <a style="color: #fff;" href="contact.html">
-                  Contact Us
-                    
-                </a>
-                     <a style="color: #fff;" href="disclosure.html">Disclosures</a>
-
-                    <a style="color: #fff;" href="https://api.whatsapp.com/send?phone=917617774454&text=Hi" target="_blank">
-                   <span> <i class="fa fa-whatsapp whatsapp-color" aria-hidden="true"></i> </span>
-                   <span class="sicons">Whatsapp</span>
-                </a>
-         
-         
-            </p>
-                                
-                                
-                                
-                            </div>
-
-                           
-                        </div>
-                    </div></div>
-            </div>
         </div>
 
 
@@ -603,7 +570,8 @@ section.hero-banner {
                       <li><a class="dropdown-item" href="https://www.uudoon.in/management/mba-executive.php" target="_blank">Executive MBA</a></li>  
                             </ul>
                         </div>
-                        <a href="apply.html" class="btn btn-lg btn-primary ms-2">Apply Now</a>
+                        <a href="blog/" class="btn btn-lg btn-default ms-2">Blog</a>
+                                                <a href="apply.html" class="btn btn-lg btn-primary ms-2">Apply Now</a>
                     </div>
                 </div>
                 <div class="header__center--right d-flex align-items-center justify-content-lg-end justify-content-center">
@@ -614,10 +582,10 @@ section.hero-banner {
                     </div>
                 </div>
                  <div class="d-flex header_btn hidden-xs">
-                        <a href="tel:18002124454" class="btn btn-lg btn-info text-start d-flex align-items-center text-white admhead">
+                        <a href="tel:9266530366" class="btn btn-lg btn-info text-start d-flex align-items-center text-white admhead">
                         
                         <span class="d-block ms-2">
-                        <small class="d-block text-capitalize">Admission Helpline</small>18002124454
+                        <small class="d-block text-capitalize">Admission Helpline</small>9266530366
                         </span>
                         </a>
                     </div>
@@ -725,7 +693,7 @@ section.hero-banner {
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footerInfo">
                         <h4>About</h4>
-                        <p class="mt-2">The university came into establishment in 2013, vide Uttaranchal University Act, 2012 (Uttarakhand Act. No. 11 of 2013) as a Private University. It’s located in Dehradun, the capital city of the Indian state of Uttarakhand. The Uttaranchal University has been recognized by the University Grants Commission, Government of India, under Sections 2(f) and 12(B) of the UGC Act, 1956, and other statutory bodies of the State and the nation. Its lush green campus is situated on NH-72, Dehradun, India. <a href="about.html">Read More</a></p>
+                        <p class="mt-2">The university came into establishment in 2013, vide Uttaranchal University Act, 2012 (Uttarakhand Act. No. 11 of 2013) as a Private University. Itâ€™s located in Dehradun, the capital city of the Indian state of Uttarakhand. The Uttaranchal University has been recognized by the University Grants Commission, Government of India, under Sections 2(f) and 12(B) of the UGC Act, 1956, and other statutory bodies of the State and the nation. Its lush green campus is situated on NH-72, Dehradun, India. <a href="about.html">Read More</a></p>
                         <div class="doon_link">
                             <i class="fa fa-external-link me-2" aria-hidden="true"></i>
                             <p> 
@@ -874,31 +842,6 @@ background: #064290;
 
     <div class="gotoTop">
         <button type="button" class="gotoTop__icon"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
-    </div>
-
-    <div class="rightFixed-btns">
-        <ul class="m-0 p-0 list-unstyled">
-        <li>
-                <a href="https://api.whatsapp.com/send?phone=917617774454&text=Hi" target="_blank">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    <div class="rightFixed-btns__content">
-                        <small>WhatsApp Only</small>
-                        <span>7617774454</span>
-                    </div>
-                </a>
-            </li>  
-            <li>
-            </li>
-            <li>
-                <a href="tel:18002124454">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <div class="rightFixed-btns__content">
-                        <small>Helpline No.</small>
-                        <span>18002124454</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
     </div>
 
     
@@ -1094,6 +1037,12 @@ background: #064290;
 
  
  
+<div class="fixed-side-btns">
+    <a href="https://wa.me/919266530366" target="_blank" rel="noopener" class="fsb-whatsapp" aria-label="Chat on WhatsApp"><span class="fsb-icon">&#x1F4AC;</span><span class="fsb-label"><small>WhatsApp</small><strong>9266530366</strong></span></a>
+    <a href="tel:9266530366" class="fsb-phone" aria-label="Call Helpline"><span class="fsb-icon">&#x1F4DE;</span><span class="fsb-label"><small>Helpline</small><strong>9266530366</strong></span></a>
+</div>
 </body>
 
 </html>
+
+
