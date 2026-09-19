@@ -269,6 +269,43 @@ ul {
   gap: 10px;
 }
 
+/* Mobile nav hamburger toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--dark, #1d2b43);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle.is-active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.is-active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .header__helpline {
   background: var(--primary-red);
   color: var(--white);
@@ -1138,14 +1175,71 @@ ul {
   }
 
   .header__left {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 10px;
     width: 100%;
   }
 
+  .nav-toggle {
+    display: flex;
+  }
+
   .header__nav {
-    flex-wrap: wrap;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--white);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px 20px;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .header__nav.is-open {
+    display: flex;
+  }
+
+  .header__nav .dropdown {
+    width: 100%;
+  }
+
+  .header__nav .dropdown__toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header__nav .dropdown__menu {
+    display: none;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    min-width: 0;
+    width: 100%;
+    padding: 0 0 0 10px;
+  }
+
+  .header__nav .dropdown.is-open .dropdown__menu {
+    display: block;
+  }
+
+  .header__nav .nav-blog-link {
+    padding: 14px 4px;
+    border-top: 1px solid #eee;
+  }
+
+  .header__nav .btn-primary {
+    display: block;
+    text-align: center;
+    margin: 14px 0 4px;
   }
 
   .header__right {

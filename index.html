@@ -84,7 +84,10 @@
                 <a href="index.html" class="header__logo" aria-label="Online Uttaranchal University Home">
                     <img src="assets/images/24_onlineUU.png" alt="Online Uttaranchal University - NAAC Grade A+" width="240" height="72">
                 </a>
-                <nav class="header__nav" aria-label="Main navigation">
+                <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="header__nav" id="primaryNav" aria-label="Main navigation">
                     <div class="dropdown">
                         <button class="dropdown__toggle" aria-haspopup="true" aria-expanded="false">
                             Programs And Degrees
@@ -711,6 +714,40 @@
             const btn = document.getElementById('goTop');
             window.addEventListener('scroll', function() {
                 btn.classList.toggle('show', window.scrollY > 400);
+            });
+        })();
+
+        // ---- Mobile Nav Toggle ----
+        (function() {
+            const toggle = document.getElementById('navToggle');
+            const nav = document.getElementById('primaryNav');
+            if (!toggle || !nav) return;
+
+            toggle.addEventListener('click', function() {
+                const isOpen = nav.classList.toggle('is-open');
+                toggle.classList.toggle('is-active', isOpen);
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            nav.querySelectorAll('.dropdown__toggle').forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    if (window.matchMedia('(max-width: 768px)').matches) {
+                        e.preventDefault();
+                        const parent = btn.closest('.dropdown');
+                        const isOpen = parent.classList.toggle('is-open');
+                        btn.setAttribute('aria-expanded', isOpen);
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (window.matchMedia('(max-width: 768px)').matches && nav.classList.contains('is-open')) {
+                    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                        nav.classList.remove('is-open');
+                        toggle.classList.remove('is-active');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    }
+                }
             });
         })();
 

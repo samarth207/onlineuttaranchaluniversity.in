@@ -313,3 +313,34 @@ $(document).on("scroll", function() {
 
     $("div.progress").css("width", progress + "%");
 })
+
+// ---- Mobile Nav Toggle (course/site pages header) ----
+(function() {
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('primaryNav');
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function() {
+        var isOpen = nav.classList.toggle('is-open');
+        toggle.classList.toggle('is-active', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.addEventListener('click', function(e) {
+        if (window.matchMedia('(max-width: 768px)').matches && nav.classList.contains('is-open')) {
+            if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('is-open');
+                toggle.classList.remove('is-active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        }
+    });
+
+    window.addEventListener('resize', function() {
+        if (!window.matchMedia('(max-width: 768px)').matches) {
+            nav.classList.remove('is-open');
+            toggle.classList.remove('is-active');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+})();
