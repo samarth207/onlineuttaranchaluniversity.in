@@ -68,7 +68,7 @@ $canonical = 'https://www.onlineuttaranchaluniversity.com/blog/' . rawurlencode(
         <ul>
           <li><span class="uu-sf-muted">Admission Helpline:</span><br><a href="tel:9266530366">9266530366</a></li>
           <li><span class="uu-sf-muted">Email:</span><br><a href="mailto:admissions@onlineuttaranchaluniversity.com">admissions@onlineuttaranchaluniversity.com</a></li>
-          <li><span class="uu-sf-muted">Academic Helpline:</span><br><a href="tel:08071176059">08071176059</a> / <a href="mailto:helpdesk@onlineuttaranchaluniversity.com">helpdesk@onlineuttaranchaluniversity.com</a></li>
+          <li><span class="uu-sf-muted">Academic Helpline:</span><br><a href="tel:09266530366">09266530366</a> / <a href="mailto:helpdesk@onlineuttaranchaluniversity.com">helpdesk@onlineuttaranchaluniversity.com</a></li>
         </ul>
       </div>
     </div>
